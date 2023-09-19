@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    font-family: sukhumvit-set;
+}
+
+
+
+/* Define the font faces */
+@font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-Text.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* @font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  } */
+
+  /* @font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-SemiBold.ttf') format('truetype');
+    font-weight: semi-bold; 
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  

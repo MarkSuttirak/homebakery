@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.scss';
+import React from 'react'; // Make sure to import React
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
-
+import Header from './components/header';
+import Footer from './components/footer';
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
+        {/* Define your routes */}
         <Route path="/" element={<Home />} />
+
+        {/* Add a catch-all route or a 404 page */}
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
