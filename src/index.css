@@ -50,3 +50,41 @@
 .sukhumvitFont {
   font-family: "sukhumvit-set";
 }
+
+.contact-form input[type='text']{
+  height: 70px;
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+.contact-form input[type='email']{
+  height: 70px;
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+.contact-form textarea{
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+
+.contact-form  input::placeholder {
+  padding: 25px;
+}
+
+.contact-form  textarea::placeholder {
+  padding: 25px;
+}

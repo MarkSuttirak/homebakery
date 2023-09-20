@@ -2,13 +2,14 @@ import React from "react";
 import ContactUsBannerImg from "../img/ContactUsBannerImg.png";
 import phoneWhite from "../img/phoneWhite.svg";
 import mapWhite from "../img/mapWhite.svg";
+import Shapes from "../img/Shapes.png";
 
 const ContactUs = () => {
   return (
     <>
-      <main className="bg-[#FAFBFC]">
+      <main>
         <section
-          className="h-[300px] flex items-center mb-[50px] coverCenter"
+          className="h-[300px] flex items-center coverCenter"
           style={{ background: `url('${ContactUsBannerImg}')` }}
         >
           <div className="container mx-auto max-w-[1200px] px-6">
@@ -27,9 +28,9 @@ const ContactUs = () => {
           </div>
         </section>
 
-        <section className="h-[450px] w-full flex">
+        <section className="min-h-[450px] xl:min-h-[auto] xl:h-[450px] w-full flex flex-wrap xl:flex-nowrap">
           <div
-            className="relative h-0 overflow-hidden w-[60%]"
+            className="relative h-0 overflow-hidden w-full xl:w-[60%]"
             style={{ paddingBottom: "56.25%" }}
           >
             <iframe
@@ -43,7 +44,7 @@ const ContactUs = () => {
               title="Google Maps"
             ></iframe>
           </div>
-          <div className="w-[20%] bg-[#003190] py-[50px] px-[40px]">
+          <div className="w-full sm:w-[50%] xl:w-[20%] bg-[#003190] py-[50px] px-[40px]">
             <div className="w-[38px] border-2 border-white rounded-[50px] p-2">
               <img src={phoneWhite} className="w-[28px]" alt="" />
             </div>
@@ -57,269 +58,111 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <div className="w-[20%] bg-[#006B3D] py-[50px] px-[40px]">
+          <div className="w-full sm:w-[50%] xl:w-[20%] bg-[#006B3D] py-[50px] px-[40px]">
             <div className="w-[38px] border-2 border-white rounded-[50px] p-2">
               <img src={mapWhite} className="w-[28px]" alt="" />
             </div>
             <h3 className="text-white text-2xl font-bold mt-5">ที่อยู่</h3>
             <p className="text-white text-[19px] leading-[36px] font-medium">
-            Meditime Company Limited<br />
-      999/99 ถนนพระรามที่ 9 <br />
-      แขวงสวนหลวง เขตสวนหลวง <br />
-      กรุงเทพมหานคร 10250
+              Meditime Company Limited
+              <br />
+              999/99 ถนนพระรามที่ 9 <br />
+              แขวงสวนหลวง เขตสวนหลวง <br />
+              กรุงเทพมหานคร 10250
             </p>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1000px] px-6 contact-us-form-sec mt-[80px]">
-          <form action="#" method="POST">
-            <div className="flex flex-col gap-y-5">
-              <div className="flex items-center">
-                <label
-                  htmlFor="first-name"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  First Name *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="first-name"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="last-name"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Last Name *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="last-name"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="email"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Email *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="phone"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Phone *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    autoComplete="phone"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="company"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Company
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="company"
-                    id="company"
-                    autoComplete="company"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="address"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Address
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="address"
-                    id="address"
-                    autoComplete="address"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="city"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  City
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    autoComplete="city"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="state"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  State
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="state"
-                    id="state"
-                    autoComplete="state"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="zip"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Zip
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="zip"
-                    id="zip"
-                    autoComplete="zip"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="enduser"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  End User of Product
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    type="text"
-                    name="enduser"
-                    id="enduser"
-                    autoComplete="enduser"
-                    className="form-input"
-                  />
-                </div>
-              </div>
-
-              <div className="flex items-center">
-                <label
-                  htmlFor="message"
-                  className="block w-[200px] font-bold text-md"
-                >
-                  Message
-                </label>
-                <div className="mt-1 w-full">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-textarea"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label
-                  htmlFor="enduser"
-                  className="block w-[200px] font-bold text-md"
-                ></label>
-                <div className="mt-1 w-full">
-                  <button
-                    type="submit"
-                    class=" bg-[#D73A32] py-3 px-16 text-[18px] leading-[27px] font-bold text-white"
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
+        <section className="relative my-[130px] px-7 ">
+          <div className="max-w-[1382px] flex mx-auto flex-wrap xl:flex-nowrap">
+            <div className="w-full  xl:w-1/2 xl:ml-[200px] gap-y-4 flex flex-col"> 
+                <img src={Shapes} className="w-[38px]" alt="" />
+                <p className="text-[#0D1317] text-[64px] leading-[68px] tracking-[-3px] dDinFont">Get in touch<br /> with us</p>
+                <p className="text-[#0d1317] text-[20px] leading-[30px]">Meditime Company Limited<br />999/99 Rama9 road, <br />Suanluang, Bangkok 10250</p>
+                <p className="text-[#0d1317] text-[20px] leading-[30px]"><strong>Tel</strong> : 02-718-3582-3 <br /><strong>Fax</strong> : 02-718-3584</p>
             </div>
-          </form>
-        </section>
+            <div className="w-full xl:w-1/2">
+              <h2 className="text-[24px] font-medium text-[#003190]">
+                We will get back to you soon as possible.
+              </h2>
+              <form action="" className="contact-form">
+                <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                  <div className="sm:col-span-3">
+                    <div className="mt-1">
+                      <input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        autoComplete="family-name"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        placeholder="ชื่อ"
+                      />
+                    </div>
+                  </div>
 
-        <section className="container mx-auto max-w-[1280px] px-6 mb-[50px] mt-20">
-          <h2 className="mt-2 text-3xl font-bold sm:text-5xl text-[#D73A32] mb-[50px] text-center">
-            CHAISERI METAL AND RUBBER CO.,LTD
-          </h2>
+                  <div className="sm:col-span-3">
+                    <div className="mt-1">
+                      <input
+                        type="text"
+                        name="last-name"
+                        id="last-name"
+                        autoComplete="family-name"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        placeholder="สกุล"
+                      />
+                    </div>
+                  </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-[30px]">
-            <div className="text-center">
-              <div className="h-[100px]">
-                <img alt="" className="mx-auto mb-5" />
-              </div>
-              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">
-                ADDRESS
-              </h2>
-              <p className="text-[#262626]">
-                59 moo 6, Pathum-Banglen road, Kubangluang, <br />
-                Lardlumkaew, Pathumthani, 12140, Thailand
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="h-[100px]">
-                <img alt="" className="mx-auto mb-5" />
-              </div>
-              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">
-                EMAIL
-              </h2>
-              <p className="text-[#262626]">Info@chaiseri-defense.com</p>
-            </div>
-            <div className="text-center">
-              <div className="h-[100px]">
-                <img alt="" className="mx-auto mb-5" />
-              </div>
-              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">
-                TEL
-              </h2>
-              <p className="text-[#262626]">
-                Tel: +66(0)2 581-4981 <br />
-                Fax: +66(0)2 581-4981
-              </p>
+                  <div className="sm:col-span-6 w-full">
+                    <div className="mt-1">
+                      <input
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        placeholder="อีเมล"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="sm:col-span-6">
+                    <div className="mt-1">
+                      <input
+                        type="text"
+                        name="company"
+                        id="company"
+                        autoComplete="company"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        placeholder="โรงพยาบาล/บริษัท"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="sm:col-span-6">
+                    <div className="mt-1">
+                      <textarea
+                        id="about"
+                        name="about"
+                        rows={7}
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        defaultValue={""}
+                        placeholder="เนื้อหาข้อความ"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex items-end sm:col-span-6 justify-end">
+                    <div className="mt-1 ">
+                      <button
+                        type="submit"
+                        class=" bg-[#003190] h-[38px] w-[130px] rounded-[5px] text-[18px] leading-[27px] font-bold text-white"
+                      >
+                        ส่ง
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </section>
