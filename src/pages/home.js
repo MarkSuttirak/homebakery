@@ -9,29 +9,31 @@ import extremitySecurity from "../img/extremitySecurity.png";
 import extremitySecurityHover from "../img/extremitySecurityHover.png";
 import poweredInstruction from "../img/poweredInstruction.png";
 import poweredInstructionHover from "../img/poweredInstructionHover.png";
+import rightIcon from "../img/rightIcon.svg";
 
 import HomeSlider from "../components/homeslider";
 
 const upperBox = [
   {
-    title:'Sport Medicine',
-    desc:'4K Imaging System, Shoulder Restoration System, Knee Repair and Construction System และ Extremity System',
-    btnText:'ดูเพิ่มเติม',
-    btnLink: 'https://www.conmed.com/en-US/Specialties-and-Techniques/Specialties/Orthopedics',
+    title: "Sport Medicine",
+    desc: "4K Imaging System, Shoulder Restoration System, Knee Repair and Construction System และ Extremity System",
+    btnText: "ดูเพิ่มเติม",
+    btnLink:
+      "https://www.conmed.com/en-US/Specialties-and-Techniques/Specialties/Orthopedics",
   },
   {
-    title:'Powered Instruments',
-    desc:'Large bone, small bone, sternal saw, high-speed drill',
-    btnText:'ดูเพิ่มเติม',
-    btnLink: 'https://www.conmed.com/en-US/Products/Surgical-Power-Tools',
+    title: "Powered Instruments",
+    desc: "Large bone, small bone, sternal saw, high-speed drill",
+    btnText: "ดูเพิ่มเติม",
+    btnLink: "https://www.conmed.com/en-US/Products/Surgical-Power-Tools",
   },
   {
-    title:'VWELL Products',
-    desc:'Personalized Insole',
-    btnText:'ดูเพิ่มเติม',
-    btnLink: 'https://www.vwell.care/footcare',
+    title: "VWELL Products",
+    desc: "Personalized Insole",
+    btnText: "ดูเพิ่มเติม",
+    btnLink: "https://www.vwell.care/footcare",
   },
-]
+];
 
 const imageItems = [
   {
@@ -80,7 +82,9 @@ const Home = () => {
         onMouseEnter={() => handleMouseEnter(item.key)}
         onMouseLeave={handleMouseLeave}
         style={{
-          backgroundImage: `url(${hoveredItem === item.key ? item.hoverImage : item.image})`,
+          backgroundImage: `url(${
+            hoveredItem === item.key ? item.hoverImage : item.image
+          })`,
         }}
       ></div>
     ));
@@ -93,25 +97,34 @@ const Home = () => {
       </section>
       <main>
         <section className=" bg-[#E5F0EB]">
-        <div className="max-w-[1200px] mx-auto flex justify-around gap-x-14 py-24">
-
-       
-      {upperBox.map((item, index) => (
-        <div key={index} className="bg-[#006B3D] w-1/3 p-8 text-white rounded-[10px] flex flex-col gap-5">
-          <h2 className="text-[24px] font-bold">{item.title}</h2>
-          <p className="text-base font-medium">{item.desc}</p>
-          <a href={item.btnLink} target="_blank" rel="noopener noreferrer">
-            {item.btnText}
-          </a>
-        </div>
-      ))}
-    
-          
-
+          <div className="max-w-[1200px] mx-auto flex justify-around gap-x-14 py-24">
+            {upperBox.map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#006B3D] w-1/3 p-8 text-white rounded-[10px] flex flex-col gap-5"
+              >
+                <h2 className="text-[24px] font-bold">{item.title}</h2>
+                <p className="text-base font-medium">{item.desc}</p>
+                <a
+                  href={item.btnLink}
+                  className="flex items-center font-bold text-[14px]"
+                >
+                  <span>
+                  {item.btnText}
+                  </span>
+                
+                  <span className="font-bold">
+                    <img src={rightIcon} alt="" className="w-[10px] ml-1"/>
+                  </span>
+                </a>
+              </div>
+            ))}
           </div>
         </section>
         <section className="max-w-[1270px] mx-auto interesting-products mt-28">
-          <h2 className="text-[#003190] text-[48px] font-bold text-center">สินค้าที่น่าสนใจ</h2>
+          <h2 className="text-[#003190] text-[48px] font-bold text-center">
+            สินค้าที่น่าสนใจ
+          </h2>
           <div className="flex gap-x-5 mt-28">{renderImageContainers()}</div>
         </section>
       </main>
