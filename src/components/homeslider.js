@@ -51,7 +51,7 @@ const HomeSlider = () => {
               alt={`Image ${index + 1}`}
               className="w-[100vw] h-[80vh] sm:h-[512px] xl:h-[280px] object-cover"
             />
-            <div className="absolute top-[30%] xl:[12%] pl-[15%] sm:w-full">
+            <div className="absolute top-[30%] xl:top-[12%] pl-[15%] sm:w-full">
               
               <p className="sm:max-w-[950px] text-[31px] xl:text-4xl font-normal dDinFont">{image.text}</p>
               <p className="mt-[15px] text-[18px]"> {image.desc1}</p>
