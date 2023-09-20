@@ -148,10 +148,11 @@ const Home = () => {
 
   return (
     <>
-      <section className="x-[80vh] sm:h-[512px] xl:h-[280px]">
+      
+      <main>
+      <section className="h-[80vh] sm:h-[512px] xl:h-[280px]">
         <HomeSlider />
       </section>
-      <main>
         <section className=" bg-[#E5F0EB] px-6 xl:px-0">
           <div className="max-w-[1200px] mx-auto flex flex-wrap sm:flex-nowrap flex-col sm:flex-row justify-around gap-x-3 xl:gap-x-14  py-24 gap-y-4">
             {upperBox.map((item, index) => (
@@ -182,12 +183,12 @@ const Home = () => {
           <div className="flex flex-row flex-wrap xl:flex-nowrap gap-x-3 xl:gap-x-5 mt-28 px-4 sm:px-6 gap-y-4">{renderImageContainers()}</div>
         </section>
 
-        <section className="mt-20">
-          <div className="flex">
+        <section className="mt-20 px-4 sm:px-6 xl:px-0">
+          <div className="flex flex-wrap">
             <div className="w-full xl:w-[35%] ">
               <div className="mt-[30%] ">
-                <div className="-mr-[66%] text-center">
-                  <img src={Reasons} alt="" className="w-[485px] mx-auto relative z-1" />
+                <div className="xl:-mr-[66%] text-center">
+                  <img src={Reasons} alt="" className="xl:w-[485px] mx-auto relative z-1" />
                 </div>
               </div>
             </div>
