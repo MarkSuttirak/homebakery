@@ -134,7 +134,7 @@ const Home = () => {
     return imageItems.map((item) => (
       <div
         key={item.key}
-        className="image-container w-1/5 h-[230px] leading-4 bg-no-repeat bg-contain"
+        className="image-container w-[48%] sm:w-[32%] xl:w-1/5 h-[200px] sm:h-[240px] lg:h-[325px] leading-4 bg-no-repeat bg-cover xl:bg-contain"
         onMouseEnter={() => handleMouseEnter(item.key)}
         onMouseLeave={handleMouseLeave}
         style={{
@@ -179,7 +179,7 @@ const Home = () => {
           <h2 className="text-[#003190] text-[48px] font-bold text-center">
             สินค้าที่น่าสนใจ
           </h2>
-          <div className="flex gap-x-5 mt-28">{renderImageContainers()}</div>
+          <div className="flex flex-row flex-wrap xl:flex-nowrap gap-x-3 xl:gap-x-5 mt-28 px-4 sm:px-6 gap-y-4">{renderImageContainers()}</div>
         </section>
 
         <section className="mt-20">
