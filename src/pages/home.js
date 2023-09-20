@@ -10,7 +10,14 @@ import extremitySecurityHover from "../img/extremitySecurityHover.png";
 import poweredInstruction from "../img/poweredInstruction.png";
 import poweredInstructionHover from "../img/poweredInstructionHover.png";
 import rightIcon from "../img/rightIcon.svg";
-
+import Reasons from "../img/Reasons.png";
+import customer from "../img/customer.png";
+import customer2 from "../img/customer2.png";
+import Partners1 from "../img/Partners1.png";
+import Partners2 from "../img/Partners2.png";
+import blogImg1 from "../img/blogImg1.png";
+import blogImg2 from "../img/blogImg2.jpeg";
+import blogImg3 from "../img/blogImg3.jpg";
 import HomeSlider from "../components/homeslider";
 
 const upperBox = [
@@ -63,6 +70,55 @@ const imageItems = [
   },
 ];
 
+const perks = [
+  {
+    name: "ประสบการณ์กว่า 10 ปี",
+    description: "เราคือผู้เชี่ยวชาญด้านสินค้าออร์โธปิดิกส์ในตลาดมากกว่า 10 ปี",
+  },
+  {
+    name: "สินค้าคุณภาพจากสหรัฐอเมริกา",
+    description:
+      "อุปกรณ์การแพทย์ทางด้านออร์โรปิดิกส์ที่มีคุณภาพได้มาตรฐาน นำเข้าจากประเทศสหรัฐอเมริกาและได้รับการรับรองจาก US FDA",
+  },
+  {
+    name: "ลูกค้าเป็นที่ 1 สำหรับเรา",
+    description:
+      "เราพัฒนาการให้บริการตลอดเวลา เพื่อสร้างความพึงพอใจและผลลัพธ์ที่ดีที่สุด",
+  },
+  {
+    name: "เราทำงานด้วยใจ",
+    description:
+      "มุ่งมั่นพัฒนาตนเองและองค์กรตลอดเวลาเพื่อส่งผลลัพธ์ที่ดีที่สุดสู่ผู้ป่วย",
+  },
+];
+
+const posts = [
+  {
+    date: "22 ธ.ค.",
+    href: "/การประชุมเชิงปฏิบัติกา-2/",
+    category: { name: "WORKSHOP", href: "#" },
+    description:
+      "บริษัทเมดิไทม์ให้ความสนับสนุนการถ่ายทอดองค์ความรู้การผ่าตัดด้านกระดูก และข้อโดยการจับมือแลกเปลี่ยนอง…",
+    imageUrl: blogImg1,
+  },
+  {
+    date: "21 ธ.ค.",
+    href: "/การประชุมเชิงปฏิบัติกา",
+    category: { name: "BOOTH EXIBITION", href: "#" },
+    description:
+      "งานประชุมวิชาการประจำปี 2563 ราชวิทยาลัยแพทย์ออร์โธปิดิกส์แห่งประเทศไทย(RCOST2563)",
+    imageUrl: blogImg2,
+  },
+  {
+    date: "4 พ.ย.",
+    href: "/กิจกรรมอื่นๆ/",
+    category: { name: "OTHER EVENT    ", href: "#" },
+    description:
+      "ทางบริษัทเมดิไทม์ ยินดีเป็นส่วนหนึ่งในการมีส่วนร่วมเพื่อทำให้สังคมไทยดีขึ้นกิจกรรมล่าสุดทางบริษัทเมด…",
+    imageUrl: blogImg3,
+  },
+];
+
 const Home = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
 
@@ -109,12 +165,10 @@ const Home = () => {
                   href={item.btnLink}
                   className="flex items-center font-bold text-[14px]"
                 >
-                  <span>
-                  {item.btnText}
-                  </span>
-                
+                  <span>{item.btnText}</span>
+
                   <span className="font-bold">
-                    <img src={rightIcon} alt="" className="w-[10px] ml-1"/>
+                    <img src={rightIcon} alt="" className="w-[10px] ml-1" />
                   </span>
                 </a>
               </div>
@@ -126,6 +180,127 @@ const Home = () => {
             สินค้าที่น่าสนใจ
           </h2>
           <div className="flex gap-x-5 mt-28">{renderImageContainers()}</div>
+        </section>
+
+        <section className="mt-20">
+          <div className="flex">
+            <div className="w-full xl:w-[35%] ">
+              <div className="mt-[30%] ">
+                <div className="-mr-[66%] text-center">
+                  <img src={Reasons} alt="" className="w-[485px] mx-auto relative z-1" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full xl:w-[65%] pt-[11%] pr-[5%] pb-[10%] pl-[15%] bg-[#E6F0EC]">
+              <div>
+                <h2 className="text-[#003190] text-[48px] font-bold">
+                  เหตุผลที่เลือก
+                  <span className="text-green-600"> MediTime</span>
+                </h2>
+
+                <div className="mt-6">
+                  <div className="mx-auto max-w-7xl">
+                    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                      {perks.map((perk) => (
+                        <div key={perk.name} className="sm:flex">
+                          <div className="sm:flex-shrink-0"></div>
+                          <div className="mt-3 sm:mt-0 sm:ml-3">
+                            <h3 className="text-2xl font-semibold text-[#3A8717]">
+                              {perk.name}
+                            </h3>
+                            <p className="mt-2 text-base font-normal text-[#3a4f66]">
+                              {perk.description}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="relative  px-6 pt-16 lg:px-8 lg:pt-32">
+            <div className="absolute inset-0">
+              <div className="h-1/3 bg-white sm:h-2/3" />
+            </div>
+            <div className="relative mx-auto max-w-7xl">
+              <div className="text-center">
+                <h2 className="text-5xl font-bold text-[#003190] sm:text-4xl">
+                  ข่าวสารและกิจกรรมที่เกี่ยวข้อง
+                </h2>
+              </div>
+              <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+                {posts.map((post) => (
+                  <div
+                    key={post.title}
+                    className="flex flex-col overflow-hidden rounded-lg"
+                  >
+                    <div className=" h-[270px]">
+                      <img
+                        className="h-full w-full object-cover rounded-[10px]"
+                        src={post.imageUrl}
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col justify-between mt-5">
+                      <div className="flex-1">
+                        <p className="text-[18px] font-medium text-[#2a3d53]">
+                          <a
+                            href={post.category.href}
+                            className="hover:underline"
+                          >
+                            {post.category.name}
+                          </a>
+                        </p>
+                        <a href={post.href} className="mt-2 block">
+                          <p className="mt-3 text-[18px] font-medium text-black">
+                            {post.description}
+                          </p>
+                        </a>
+
+                        <a
+                          href={post.href}
+                          className="flex items-center font-bold text-[16px] text-[#3A8717] mt-3"
+                        >
+                          <span>อ่านต่อ</span>
+
+                          <span className="font-bold">
+                            <img
+                              src={rightIcon}
+                              alt=""
+                              className="w-[10px] ml-1"
+                            />
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-[1270px] mx-auto interesting-products mt-28">
+          <h2 className="text-[#003190] text-[48px] font-bold text-center">
+            พาร์ทเนอร์ของเรา
+          </h2>
+          <div className="flex gap-x-20 justify-center mt-20">
+            <img src={Partners1} className=" " alt="" />
+            <img src={Partners2} className="" alt="" />
+          </div>
+        </section>
+
+        <section className="max-w-[1270px] mx-auto interesting-products my-32 ">
+          <h2 className="text-[#003190] text-[48px] font-bold text-center">
+            ลูกค้าของเรา
+          </h2>
+          <img src={customer} className="mx-auto mt-10" alt="" />
+          <img src={customer2} className="mx-auto mt-4" alt="" />
         </section>
       </main>
     </>
