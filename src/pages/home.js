@@ -148,7 +148,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="h-[280px]">
+      <section className="x-[80vh] sm:h-[512px] xl:h-[280px]">
         <HomeSlider />
       </section>
       <main>
