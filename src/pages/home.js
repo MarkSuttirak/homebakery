@@ -1,6 +1,17 @@
+import React from "react";
+
+import HomeSlider from "../components/homeslider";
 const Home = () => {
   return (
-    <>Hello World</>
+    <>
+    <section className="h-[280px]">
+    <HomeSlider />
+
+    </section>
+    <main>
+
+    </main>
+    </>
   )
 }
 
