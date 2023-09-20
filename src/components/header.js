@@ -31,12 +31,12 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white  h-[120px]">
-      <nav className="flex max-w-[1290px] mx-auto items-center justify-between p-6 lg:px-0" aria-label="Global">
+    <header className="bg-white xl:h-[120px] px-4">
+      <nav className="flex max-w-[1290px] h-[70px] xl:h-[auto] mx-auto items-center justify-between xl:p-6 lg:px-0" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="w-[269px] h-auto" src={MedtimeLogo} alt="" />
+            <img className="w-[166px] xl:w-[269px] h-auto" src={MedtimeLogo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
