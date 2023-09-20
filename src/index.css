@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: sukhumvit-set;
+}
+
+@font-face {
+  font-family: "D-DIN regular";
+  src: url("./fonts/D-DIN.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define the font faces */
+@font-face {
+  font-family: "sukhumvit-set";
+  src: url("./fonts/SukhumvitSet-Text.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  } */
+
+/* @font-face {
+    font-family: 'sukhumvit-set';
+    src: url('./fonts/SukhumvitSet-SemiBold.ttf') format('truetype');
+    font-weight: semi-bold; 
+    font-style: normal;
+  } */
+
+@font-face {
+  font-family: "sukhumvit-set";
+  src: url("./fonts/SukhumvitSet-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+.dDinFont {
+  font-family: "D-DIN regular";
+}
+
+.sukhumvitFont {
+  font-family: "sukhumvit-set";
+}
+
+.contact-form input[type='text']{
+  height: 70px;
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+.contact-form input[type='email']{
+  height: 70px;
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+.contact-form textarea{
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5B5B5B;
+  /* padding-left: 20px; */
+}
+
+
+.contact-form  input::placeholder {
+  padding: 25px;
+}
+
+.contact-form  textarea::placeholder {
+  padding: 25px;
+}
