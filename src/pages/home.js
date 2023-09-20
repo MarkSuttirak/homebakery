@@ -96,12 +96,12 @@ const Home = () => {
         <HomeSlider />
       </section>
       <main>
-        <section className=" bg-[#E5F0EB]">
-          <div className="max-w-[1200px] mx-auto flex justify-around gap-x-14 py-24">
+        <section className=" bg-[#E5F0EB] px-6 xl:px-0">
+          <div className="max-w-[1200px] mx-auto flex flex-wrap sm:flex-nowrap flex-col sm:flex-row justify-around gap-x-3 xl:gap-x-14  py-24 gap-y-4">
             {upperBox.map((item, index) => (
               <div
                 key={index}
-                className="bg-[#006B3D] w-1/3 p-8 text-white rounded-[10px] flex flex-col gap-5"
+                className="bg-[#006B3D] sm:w-1/3 p-8 sm:p-6 xl:p-8 text-white rounded-[10px] flex flex-col gap-5"
               >
                 <h2 className="text-[24px] font-bold">{item.title}</h2>
                 <p className="text-base font-medium">{item.desc}</p>
