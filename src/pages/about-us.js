@@ -10,16 +10,16 @@ function AboutUs() {
       <section>
         <img src={aboutUsBanner} alt="" />
       </section>
-      <section className="flex">
-        <div className="w-full sm:w-[38%]"></div>
-        <div className="w-full sm:w-[62%] flex py-[30px] bg-[#E6F0EC] -mt-[125px]">
-          <div className="w-full sm:w-[38%]">
-            <h2 className="text-[#006b3d] text-[64px] dDinFont text-center">
+      <section className="flex flex-wrap  flex-col sm:flex-row sm:flex-nowrap">
+        <div className="w-full  sm:w-[20%]  xl:w-[38%]"></div>
+        <div className="w-full sm:w-[80%] xl:w-[62%] flex py-[30px] bg-[#E6F0EC] -mt-[125px]">
+          <div className="w-[30%] sm:w-[38%]">
+            <h2 className="text-[#006b3d] text-[31px] sm:text-[52px] xl:text-[64px] dDinFont text-center">
               We are
             </h2>
           </div>
-          <div className="w-full sm:w-[62%] pr-[8%]">
-            <p className="text-[#006b3d] text-[26px] leading-[36px] font-medium">
+          <div className="w-[70%] sm:w-[62%] sm:pr-[8%]">
+            <p className="text-[#006b3d] text-[16px] sm:text-[21px] xl:text-[26px] leading-[34px] xl:leading-[36px] font-medium">
               Empower medical product provider, to deliver particular outcome
               for patients, Explore what we can do together.
               <br />
@@ -31,6 +31,7 @@ function AboutUs() {
       </section>
 
       <section className="mt-[125px] max-w-[1270px] mx-auto ">
+        <div className="mx-7 xl:mx-0">
         <h2 className="text-[#132573] text-[48px] font-bold text-center">
           การดูแลอย่างใกล้ชิด
         </h2>
@@ -41,18 +42,20 @@ function AboutUs() {
           ออร์โธปิดิกส์ด้วยนวัตกรรมที่ดีที่สุด
           และการให้บริการที่ดีที่สุดเพื่อส่งต่อผลลัพธ์ที่ดีที่สุดแก่ผู้ป่วย
         </p>
+        </div>
+        
       </section>
 
-      <section className="mt-[50px] mb-[200px]">
-        <h2 className="text-[#132573] text-[48px] font-bold text-center">
+      <section className="mt-[50px] mb-[200px] mx-7">
+        <h2 className="text-[#132573] text-[26px] sm:text-[48px] font-bold text-center">
           เกี่ยวกับเมดิไทม์ <br />
           ผู้บริหาร
         </h2>
-        <div className="max-w-[1270px] mx-auto flex items-center mt-[80px]">
-          <div className="w-[50%]">
+        <div className="max-w-[1270px] mx-auto flex flex-wrap flex-col sm:flex-row items-center mt-[80px]">
+          <div className="w-full sm:w-[50%]">
             <img src={gmImage} alt="" />
           </div>
-          <div className="w-[50%]">
+          <div className="w-full sm:w-[50%] mt-6 sm:mt-0">
             <h2 className="text-[#132573] text-[24px] leading-[36px] font-bold text-right">
               ธวัชชัย ประกอบ (General Manager)
             </h2>
