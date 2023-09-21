@@ -70,31 +70,31 @@ function NewCategories() {
   ];
   return (
     <main>
-      <section className="new-cat-banner py-36">
-        <div className="max-w-[1382px] mx-auto flex items-center">
-          <div className="w-[50%] pl-[15%]">
-            <h2 className="text-[#0d1317] text-[64px] leading-[64px] dDinFont">
+      <section className="new-cat-banner py-36 px-7">
+        <div className="max-w-[1382px]  mx-auto flex flex-col-reverse sm:flex-row items-center">
+          <div className="w-full xl:w-[50%] xl:pl-[15%] sm:pr-5 xl:pr-0">
+            <h2 className="text-[#0d1317] text-[45px] sm:text-[51px] xl:text-[64px] leading-[53px] xl:leading-[64px] mt-[30px] sm:mt-0  font-medium tracking-[-3px]">
               Explore what we <br /> can do together
             </h2>
-            <p className="text-[#5b5b5b] text-2xl font-medium">
+            <p className="text-[#5b5b5b] text-2xl font-medium mt-3">
               ให้เราช่วยคุณค้นหาสิ่งที่คุณต้องการ
             </p>
           </div>
-          <div className="w-[50%]">
+          <div className="w-full xl:w-[50%]">
             <img src={NewCatHeroImage} alt="" />
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="my-[120px]">
         <div className="max-w-[1350px] mx-auto">
           <h2 className="text-[#003190] text-4xl font-bold text-center">
             อุปกรณ์ทางการแพทย์
           </h2>
-          <div className="flex gap-6 flex-wrap pl-7">
+          <div className="flex gap-3 xl:gap-6 flex-col sm:flex-row flex-wrap sm:pl-3 xl:pl-7 mt-[50px] xl:mt-[80px] mx-5">
             {category.map((item) => (
-              <div className="bg-[#E6F0EC] w-[31.33%] py-[50px] px-[36px] pb-[0px] rounded-[20px]">
-                <h2 className="text-[#003190] text-4xl font-semibold uppercase">
+              <div className="bg-[#E6F0EC] w-full sm:w-[31.33%] py-[50px] px-[36px] pb-[0px] rounded-[20px]">
+                <h2 className="text-[#003190] text-[21px] xl:text-4xl font-semibold uppercase">
                   {item.name}
                 </h2>
                 <a
@@ -116,7 +116,7 @@ function NewCategories() {
                   </svg>
                 </a>
                 <div className="text-center align-middle mt-[50px]">
-                    <img src={item.img} className="" alt="" />
+                    <img src={item.img} className="mx-auto" alt="" />
                 </div>
                
               </div>
