@@ -85,7 +85,7 @@ const ContactUs = () => {
               <h2 className="text-[24px] font-medium text-[#003190]">
                 We will get back to you soon as possible.
               </h2>
-              <form action="" className="contact-form">
+              <form action="" className="meditime-form">
                 <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
                   <div className="sm:col-span-3">
                     <div className="mt-1">

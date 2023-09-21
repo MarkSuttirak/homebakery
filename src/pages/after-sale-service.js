@@ -39,7 +39,7 @@ function AfterSaleService() {
           <p className="text-[#2a3d53] text-[17px] sm:text-2xl">
             โปรดติดต่อพร้อมข้อมูลต่อไปนี้
           </p>
-          <form action="" className="contact-form">
+          <form action="" className="meditime-form">
             <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
               <div className="sm:col-span-6">
                 <div className="mt-1">
