@@ -1,9 +1,10 @@
 import React from 'react'; // Make sure to import React
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
+import ContactUs from './pages/contact-us';
+import AboutUs from './pages/about-us';
 import Header from './components/header';
 import Footer from './components/footer';
-import ContactUs from './pages/contact-us';
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
         {/* Define your routes */}
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
 
         {/* Add a catch-all route or a 404 page */}
         {/* <Route path="*" element={<NotFound />} /> */}
