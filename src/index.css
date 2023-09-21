@@ -51,7 +51,7 @@
   font-family: "sukhumvit-set";
 }
 
-.contact-form input[type='text']{
+.meditime-form input[type='text']{
   height: 70px;
   border: 1px solid #CED4DA;
   border-radius: 0.25rem;
@@ -61,7 +61,7 @@
   /* padding-left: 20px; */
 }
 
-.contact-form input[type='email']{
+.meditime-form input[type='email']{
   height: 70px;
   border: 1px solid #CED4DA;
   border-radius: 0.25rem;
@@ -71,7 +71,7 @@
   /* padding-left: 20px; */
 }
 
-.contact-form textarea{
+.meditime-form textarea{
   border: 1px solid #CED4DA;
   border-radius: 0.25rem;
   font-size: 18px;
@@ -81,10 +81,10 @@
 }
 
 
-.contact-form  input::placeholder {
+.meditime-form  input::placeholder {
   padding: 25px;
 }
 
-.contact-form  textarea::placeholder {
+.meditime-form  textarea::placeholder {
   padding: 25px;
 }
