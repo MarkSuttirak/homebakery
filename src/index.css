@@ -88,3 +88,8 @@
 .meditime-form  textarea::placeholder {
   padding: 25px;
 }
+
+.new-cat-banner{
+  background-color: transparent;
+    background-image: linear-gradient(180deg, #E6F0EC1A 0%, #006B3D1A 100%);
+}
