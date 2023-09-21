@@ -5,6 +5,7 @@ import ContactUs from './pages/contact-us';
 import AboutUs from './pages/about-us';
 import AfterSaleService from './pages/after-sale-service';
 import NewCategories from './pages/new-categories';
+import BlogDetail from './pages/blog-detail';
 import Header from './components/header';
 import Footer from './components/footer';
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/บริการหลังการขาย" element={<AfterSaleService />} />
         <Route path="/new-categories" element={<NewCategories />} />
+        <Route path="/blog-detail" element={<BlogDetail />} />
+
 
         {/* Add a catch-all route or a 404 page */}
         {/* <Route path="*" element={<NotFound />} /> */}

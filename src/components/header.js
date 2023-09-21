@@ -32,8 +32,8 @@ export default function Header() {
 
   return (
     <header className="bg-white xl:h-[120px] px-4">
-      <nav className="flex max-w-[1290px] h-[70px] xl:h-[auto] mx-auto items-center justify-between xl:p-6 lg:px-0" aria-label="Global">
-        <div className="flex lg:flex-1">
+      <nav className="flex max-w-[1290px] h-[120px] mx-auto items-center justify-between lg:px-0" aria-label="Global">
+        <div className="flex lg:flex-1 h-full items-center">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img className="w-[166px] xl:w-[269px] h-auto" src={MedtimeLogo} alt="" />
@@ -49,9 +49,9 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-[18px] font-bold leading-6 text-[#2a3d53] uppercase">
+        <Popover.Group className="hidden lg:flex h-full lg:gap-x-12">
+          <Popover className="relative h-full flex justify-center items-center px-3 hover:bg-[#006B3D] hover:text-white">
+            <Popover.Button className="flex items-center gap-x-1 text-[18px] font-bold leading-6 text-[#2a3d53] uppercase h-full hover:text-white">
             สินค้าทั้งหมด
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -88,10 +88,10 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-[18px] font-bold text-[#2a3d53] uppercase">
+          <a href="#" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center ">
           บริการหลังการขาย
           </a>
-          <a href="#" className="text-[18px] font-bold text-[#2a3d53] uppercase">
+          <a href="#" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center">
           เกี่ยวกับ MediTime
           </a>
         </Popover.Group>
