@@ -6,6 +6,8 @@
   font-family: sukhumvit-set;
 }
 
+body{overflow-x: hidden;}
+
 @font-face {
   font-family: "D-DIN regular";
   src: url("./fonts/D-DIN.ttf") format("truetype");

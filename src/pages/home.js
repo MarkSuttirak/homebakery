@@ -19,6 +19,16 @@ import blogImg1 from "../img/blogImg1.png";
 import blogImg2 from "../img/blogImg2.jpeg";
 import blogImg3 from "../img/blogImg3.jpg";
 import HomeSlider from "../components/homeslider";
+import customer1 from "../img/customor1.png";
+import customerMobile2 from "../img/customerMobile2.png";
+import customer3 from "../img/customer3.png";
+import customer4 from "../img/customer4.png";
+import customer5 from "../img/customer5.png";
+import customer6 from "../img/customer6.png";
+import customer7 from "../img/customer7.png";
+import customer8 from "../img/customer8.png";
+import customer9 from "../img/customer9.png";
+
 
 const upperBox = [
   {
@@ -70,7 +80,7 @@ const imageItems = [
   },
 ];
 
-const perks = [
+const choosingReasons = [
   {
     name: "ประสบการณ์กว่า 10 ปี",
     description: "เราคือผู้เชี่ยวชาญด้านสินค้าออร์โธปิดิกส์ในตลาดมากกว่า 10 ปี",
@@ -148,11 +158,10 @@ const Home = () => {
 
   return (
     <>
-      
       <main>
-      <section className="h-[80vh] sm:h-[512px] xl:h-[280px]">
-        <HomeSlider />
-      </section>
+        <section className="h-[80vh] sm:h-[512px] xl:h-[280px]">
+          <HomeSlider />
+        </section>
         <section className=" bg-[#E5F0EB] px-6 xl:px-0">
           <div className="max-w-[1200px] mx-auto flex flex-wrap sm:flex-nowrap flex-col sm:flex-row justify-around gap-x-3 xl:gap-x-14  py-24 gap-y-4">
             {upperBox.map((item, index) => (
@@ -180,19 +189,25 @@ const Home = () => {
           <h2 className="text-[#003190] text-[48px] font-bold text-center">
             สินค้าที่น่าสนใจ
           </h2>
-          <div className="flex flex-row flex-wrap xl:flex-nowrap gap-x-3 xl:gap-x-5 mt-28 px-4 sm:px-6 gap-y-4">{renderImageContainers()}</div>
+          <div className="flex flex-row flex-wrap xl:flex-nowrap gap-x-3 xl:gap-x-5 mt-28 px-4 sm:px-6 gap-y-4">
+            {renderImageContainers()}
+          </div>
         </section>
 
         <section className="mt-20 px-4 sm:px-6 xl:px-0">
           <div className="flex flex-wrap">
             <div className="w-full xl:w-[35%] ">
-              <div className="mt-[30%] ">
+              <div className="mt-[5%] xl:mt-[30%] ">
                 <div className="xl:-mr-[66%] text-center">
-                  <img src={Reasons} alt="" className="xl:w-[485px] mx-auto relative z-1" />
+                  <img
+                    src={Reasons}
+                    alt=""
+                    className="w-full xl:w-[485px] mx-auto relative z-1"
+                  />
                 </div>
               </div>
             </div>
-            <div className="w-full xl:w-[65%] pt-[11%] pr-[5%] pb-[10%] pl-[15%] bg-[#E6F0EC]">
+            <div className="w-full mt-5 xl:mt-0 xl:w-[65%] pt-[5%] xl:pt-[11%] pr-[5%] xl:pr-[5%] pb-[5%] xl:pb-[10%] pl-[5%] xl:pl-[15%] bg-[#E6F0EC]">
               <div>
                 <h2 className="text-[#003190] text-[48px] font-bold">
                   เหตุผลที่เลือก
@@ -201,16 +216,16 @@ const Home = () => {
 
                 <div className="mt-6">
                   <div className="mx-auto max-w-7xl">
-                    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                      {perks.map((perk) => (
-                        <div key={perk.name} className="sm:flex">
+                    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-12 gap-x-8 sm:max-w-none sm:grid-cols-2 sm:gap-y-16">
+                      {choosingReasons.map((choosingReason) => (
+                        <div key={choosingReason.name} className="sm:flex">
                           <div className="sm:flex-shrink-0"></div>
                           <div className="mt-3 sm:mt-0 sm:ml-3">
                             <h3 className="text-2xl font-semibold text-[#3A8717]">
-                              {perk.name}
+                              {choosingReason.name}
                             </h3>
                             <p className="mt-2 text-base font-normal text-[#3a4f66]">
-                              {perk.description}
+                              {choosingReason.description}
                             </p>
                           </div>
                         </div>
@@ -234,7 +249,7 @@ const Home = () => {
                   ข่าวสารและกิจกรรมที่เกี่ยวข้อง
                 </h2>
               </div>
-              <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+              <div className="mx-auto mt-12 grid max-w-3xl gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
                 {posts.map((post) => (
                   <div
                     key={post.title}
@@ -290,7 +305,7 @@ const Home = () => {
           <h2 className="text-[#003190] text-[48px] font-bold text-center">
             พาร์ทเนอร์ของเรา
           </h2>
-          <div className="flex gap-x-20 justify-center mt-20">
+          <div className="flex gap-x-20 gap-y-10 justify-center flex-wrap gap mt-20">
             <img src={Partners1} className=" " alt="" />
             <img src={Partners2} className="" alt="" />
           </div>
@@ -300,8 +315,22 @@ const Home = () => {
           <h2 className="text-[#003190] text-[48px] font-bold text-center">
             ลูกค้าของเรา
           </h2>
+          <div className="desktop-customer hidden sm:block">
           <img src={customer} className="mx-auto mt-10" alt="" />
           <img src={customer2} className="mx-auto mt-4" alt="" />
+          </div>
+          
+          <div className="mobile-customer sm:hidden grid grid-cols-2 gap-x-5 gap-y-12 mt-10">
+            <img src={customer1} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customerMobile2} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer3} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer4} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer5} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer6} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer7} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer8} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img src={customer9} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+          </div>
         </section>
       </main>
     </>
