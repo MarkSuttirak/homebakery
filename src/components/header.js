@@ -15,15 +15,12 @@ import MedtimeLogo from '../img/MeditimeLogo.png'
 import { Link } from 'react-router-dom'
 
 const products = [
-  { name: 'Sports Medicine', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Powered Instruments', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'VWELL Products', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Sports Medicine',  href: 'https://www.conmed.com/en/specialties-and-techniques/specialties/orthopedics' },
+  { name: 'Powered Instruments',href: 'https://www.conmed.com/en/products/surgical-power-tools' },
+  { name: 'VWELL Products', href: 'https://www.vwell.care/footcare' },
   
 ]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
