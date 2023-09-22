@@ -1,34 +1,23 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import MedtimeLogo from "../img/footerlogo.png";
 import map from "../img/map.svg";
 import phone from "../img/phone.svg";
 import time from "../img/time.svg";
 
 const navigation = {
-  solutions: [
-    { name: "เครื่องมือแพทย์", href: "#" },
-    { name: "บริการหลังการขาย", href: "#" },
+  serve: [
+    { name: "เครื่องมือแพทย์", href: "/new-categories/" },
+    { name: "บริการหลังการขาย", href: "/บริการหลังการขาย/" },
   ],
-  support: [
-    { name: "แผนที่", href: "#" },
-    { name: "ติดต่อเรา", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
-  ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+  aboutus: [
+    { name: "แผนที่", href: "https://www.google.co.th/maps/place/Meditime+Company+Limited/@20.8409111,-18.2301756,3z/data=!4m8!1m2!2m1!1smeditime!3m4!1s0x311d61d782ebffff:0x6cf441793064ef5f!8m2!3d13.7415551!4d100.6275837?hl=th" },
+    { name: "ติดต่อเรา", href: "/contact-us/" },
   ],
   social: [
     {
       name: "Line",
-      href: "#",
+      href: "https://line.me/R/ti/p/@631nfgiq",
       icon: (props) => (
         <svg
           fill="#003190"
@@ -138,14 +127,14 @@ export default function Footer() {
                     บริการ
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.solutions.map((item) => (
+                    {navigation.serve.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className="text-[#2a3d53] text-sm leading-5 font-bold"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -155,14 +144,14 @@ export default function Footer() {
                     เกี่ยวกับเรา
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {navigation.support.map((item) => (
+                    {navigation.aboutus.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className="text-[#2a3d53] text-sm leading-5 font-bold"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
