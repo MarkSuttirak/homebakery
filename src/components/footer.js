@@ -107,7 +107,7 @@ export default function Footer() {
         Footer
       </h2>
       <div className="bg-[#F2F7FF] main-footer">
-        <div className="mx-auto  max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        <div className="mx-auto  max-w-7xl px-6 pb-8 pt-16 sm:pt-24 sm:pb-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
               <img className="w-[249px]" src={MedtimeLogo} alt="Company name" />
@@ -115,6 +115,9 @@ export default function Footer() {
                 We are a family centered practice that incorporates compassion
                 and dedication to promote your well being.
               </p>
+              <button className="w-[180px] h-[54px] text-white bg-[#003190] rounded-[10px] font-bold">
+              ติดต่อเรา
+              </button>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
                   <a
@@ -205,18 +208,18 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-            <p className="text-xs leading-5 text-gray-500">© 2022 - Meditime</p>
-          </div>
+
         </div>
         <div className="sm:flex sm:px-32 bg-white justify-between py-5 px-5">
           <div className="flex justify-between items-center sm:w-[30%]">
             <p className="text-xs text-[#003190] font-normal ">© 2022 - Meditime</p>
             <p className="text-xs text-[#003190] font-normal ">All rights reserved.</p>
           </div>
-          <div className="sm:w-[70%]">
-            <p className="text-xs text-[#003190] font-normal ">© 2022 - Meditime</p>
-            <p className="text-xs text-[#003190] font-normal ">All rights reserved.</p>
+          <div className="sm:w-[70%] sm:flex justify-end gap-x-14">
+          <p className="text-xs text-[#003190] font-normal ">Sitemap</p>
+          <p className="text-xs text-[#003190] font-normal ">Terms and Conditions</p>
+            <p className="text-xs text-[#003190] font-normal ">Privacy Policy</p>
+            <p className="text-xs text-[#003190] font-normal ">Manage Cookies</p>
           </div>
         </div>
       </div>
