@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.DMSans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.IBMPlex{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.NotoSansThai{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
