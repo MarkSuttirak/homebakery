@@ -11,7 +11,7 @@ function Home() {
         <section className='mt-[180px]'>
             <div className='max-w-[1270px] mx-auto flex justify-center items-center'>
                 <div className='w-1/2'>
-                    <img src={chooseYourMeal1} className='mr-0 leading-[10px]' alt="" />
+                    <img src={chooseYourMeal1} className='mr-0 rounded-[10px]' alt="" />
                 </div>
                 <div className='w-1/2 pl-[50px]'>
                     <h3 className='text-[#ff7f30] text-[36px] leading-[40px] font-bold DMSans'>CHOOSE YOUR MEALS</h3>
@@ -27,7 +27,7 @@ function Home() {
                     <p className='DMSans leading-[20px] mt-[20px]'>ท่านไม่ต้องกังวลเรื่องการขนส่ง เรามีบริการขนส่งระดับมืออาชีพ <br /> และมีการแพ็คใส่กล่องอย่างแน่นหนาไม่ต้องกังวลว่าสินค้าของท่าน <br />จะเกิดความเสียหายในการขนส่ง</p>
                 </div>
                 <div className='w-1/2'>
-                    <img src={unpackYourBox1} className='mr-0 leading-[10px]' alt="" />
+                    <img src={unpackYourBox1} className='mr-0 rounded-[10px]' alt="" />
                 </div>
                 
             </div>
@@ -36,7 +36,7 @@ function Home() {
         <section className='mt-[80px]'>
             <div className='max-w-[1270px] mx-auto flex justify-center items-center'>
                 <div className='w-1/2'>
-                    <img src={cookCreateEnjoy1} className='mr-0 leading-[10px]' alt="" />
+                    <img src={cookCreateEnjoy1} className='mr-0 rounded-[10px]' alt="" />
                 </div>
                 <div className='w-1/2 pl-[50px]'>
                     <h3 className='text-[#ff7f30] text-[36px] leading-[40px] font-bold DMSans'>COOK, CREATE, ENJOY</h3>
