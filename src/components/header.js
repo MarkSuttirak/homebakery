@@ -1,5 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Link } from 'react-router-dom';
+
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -11,6 +13,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import MedtimeLogo from '../img/MeditimeLogo.png'
+import { Link } from 'react-router-dom'
 
 const products = [
   { name: 'Sports Medicine', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -88,12 +91,12 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center ">
+          <Link to="/บริการหลังการขาย/" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center ">
           บริการหลังการขาย
-          </a>
-          <a href="#" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center">
+          </Link>
+          <Link to="/about-us/" className="text-[18px] font-bold text-[#2a3d53] px-3 hover:bg-[#006B3D] hover:text-white uppercase h-full flex items-center justify-center">
           เกี่ยวกับ MediTime
-          </a>
+          </Link>
         </Popover.Group>
       
       </nav>
