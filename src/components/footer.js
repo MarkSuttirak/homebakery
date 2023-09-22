@@ -102,17 +102,17 @@ const perks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-white " aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="bg-[#F2F7FF] main-footer">
+      <div className="bg-[#F2F7FF] main-footer px-7">
         <div className="mx-auto  max-w-7xl px-6 pb-8 pt-16 sm:pt-24 sm:pb-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
-              <img className="w-[249px]" src={MedtimeLogo} alt="Company name" />
-              <p className="text-sm leading-6 text-gray-600">
-                We are a family centered practice that incorporates compassion
+              <img className="w-full sm:w-[249px]" src={MedtimeLogo} alt="Company name" />
+              <p className="text-sm leading-6 text-gray-600 text-center sm:text-left">
+                We are a family centered practice that incorporates compassion <br />
                 and dedication to promote your well being.
               </p>
               <button className="w-[180px] h-[54px] text-white bg-[#003190] rounded-[10px] font-bold">
@@ -131,8 +131,8 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="mt-16 grid xl:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+              <div className="md:grid xl:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-xl font-bold leading-9 text-[#2a3d53]">
                     บริการ
@@ -168,7 +168,7 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="md:grid md:grid-cols-1 md:gap-8">
+              <div className="md:grid md:grid-cols-1 md:gap-8 sm:max-w-[380px] xl-w-full">
                 <div>
                   {/* <h3 className="text-sm font-semibold leading-6 text-gray-900">
                     Company
@@ -210,19 +210,20 @@ export default function Footer() {
           </div>
 
         </div>
-        <div className="sm:flex sm:px-32 bg-white justify-between py-5 px-5">
-          <div className="flex justify-between items-center sm:w-[30%]">
+        
+      </div>
+      <div className="sm:flex xl:px-32 bg-white justify-between py-5 px-7">
+          <div className="flex justify-evenly sm:justify-start xl:justify-between sm:gap-x-[350px] xl:gap-x-0 items-center w-full xl:w-[30%]">
             <p className="text-xs text-[#003190] font-normal ">© 2022 - Meditime</p>
             <p className="text-xs text-[#003190] font-normal ">All rights reserved.</p>
           </div>
-          <div className="sm:w-[70%] sm:flex justify-end gap-x-14">
+          <div className="sm:w-[70%] xl:flex justify-end gap-x-14 hidden">
           <p className="text-xs text-[#003190] font-normal ">Sitemap</p>
           <p className="text-xs text-[#003190] font-normal ">Terms and Conditions</p>
             <p className="text-xs text-[#003190] font-normal ">Privacy Policy</p>
             <p className="text-xs text-[#003190] font-normal ">Manage Cookies</p>
           </div>
         </div>
-      </div>
     </footer>
   );
 }
