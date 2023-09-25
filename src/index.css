@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: 'bobby-jones';
+    src: url("../src/fonts/Bobby Rough Soft.ttf");
+  }
+  
+
+
 .DMSans {
     font-family: 'DM Sans', sans-serif;
 }
@@ -13,4 +20,8 @@
 
 .NotoSansThai{
     font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.bobbyJones {
+    font-family: 'bobby-jones';
 }
