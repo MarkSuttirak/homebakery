@@ -1,8 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import HomeSlider from "../components/HomeSlider";
 import chooseYourMeal1 from "../img/choose-your-meal1.png";
 import unpackYourBox1 from "../img/unpack-your-box-1.png";
 import cookCreateEnjoy1 from "../img/cook-create-enjoy-1.png";
+import curveBorder from "../img/curveBorder.png";
+import blogImg1 from "../img/global.jpg";
+import blogImg2 from "../img/ceocmw.jpg";
+import blogImg3 from "../img/cmwfood.jpg";
+
+const posts = [
+  {
+    title: "CMW Foods Support บุกตลาดเนื้อสัตว์สหรัฐอเมริกา",
+    date: "February 10, 2023",
+    href: "#",
+    category: { name: "February 10, 2023", href: "#" },
+    description:
+      "คุณวิทวัส ประจันตะเสน ผู้ก่อตั้งและผู้บริหาร ได้นำแบรนด์สินค้าและผลิตภัณฑ์ที่อยู่ภายใต้การบริหารบุกตลาดเนื้อสัตว์สหรัฐอเมริกา เป็นการก้าวเข้าสู้ตลาดโลก เพื่อตอกย้ำความเป็นผู้",
+    imageUrl: blogImg1,
+  },
+  {
+    title: "CEO CMW ขนทัพเซเลบริตี้แบรนด์ดัง ออกบูธ งานครบรอบ 21 ปี คมชัดลึก",
+    date: "February 10, 2023",
+    href: "/การประชุมเชิงปฏิบัติกา",
+    category: { name: "BOOTH EXIBITION", href: "#" },
+    description:
+      "คุณวิทวัส ประจันตะเสน CEO บริษัท CMW Foods Support Co., Ltd. เจ้าของแบรนด์ Meats Me และ Gyu Gyu",
+    imageUrl: blogImg2,
+  },
+  {
+    title:
+      "บริษัท CMW foods Support ร่วมเป็นผู้สนับสนุนหลักงาน CROWN CELEBRATION BRILLIANCE & JEWELRY EXTRAVAGANZA",
+    date: "February 10, 2023",
+    href: "/กิจกรรมอื่นๆ/",
+    category: { name: "OTHER EVENT    ", href: "#" },
+    description:
+      "บริษัท CMW foods Support ร่วมเป็นผู้สนับสนุนหลักงาน CROWN CELEBRATION BRILLIANCE & JEWELRY EXTRAVAGANZAมิสแกรนด์สมุทรปราการ 2023 โดยมีคุณ",
+    imageUrl: blogImg3,
+  },
+];
 
 function Home() {
   return (
@@ -71,7 +108,14 @@ function Home() {
       </section>
 
       <section className="bg-[black] py-[130px]">
-        <div class="grid xl:grid-cols-3 gap-4 max-w-[1250px] mx-auto">
+        <div className="text-center">
+          <h2 className="text-white text-[38px] bobbyJones text-center">
+            HOW TO ORDER
+          </h2>
+          <img src={curveBorder} className="mx-auto" alt="" />
+        </div>
+
+        <div class="grid xl:grid-cols-3 gap-4 max-w-[1250px] mx-auto -mt-[50px]">
           <div class="p-4  flex flex-col justify-center items-center mt-[150px]">
             <div className="qodef-e-icon w-[140px] h-[140px] flex justify-center items-center rounded-full transform scale-100 opacity-100 text-opacity-0 bg-white">
               <span className="qodef-e-item-icon-text">
@@ -167,6 +211,66 @@ function Home() {
             <h5 className="text-[#FF7F30] text-[24px] text-2xl mt-5 bobbyJones">
               5.PAYMENT
             </h5>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[black] py-[130px]">
+        <div className="text-center">
+          <h2 className="text-white text-[49px] bobbyJones text-center">
+          BLOG
+          </h2>
+          <img src={curveBorder} className="mx-auto w-[100px] h-[14px] object-cover" alt="" />
+        </div>
+        <div className="relative  px-6 pt-6 lg:px-8 lg:pt-0">
+         
+          <div className="relative mx-auto max-w-7xl">
+            
+            <div className="mx-auto mt-12 grid max-w-3xl gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
+              {posts.map((post) => (
+                <div
+                  key={post.title}
+                  className="flex flex-col overflow-hidden rounded-lg bg-white"
+                >
+                  <div className=" h-[270px] relative">
+                    <img
+                      className="h-full w-full object-cover"
+                      src={post.imageUrl}
+                      alt=""
+                    />
+                    
+                  </div>
+                  <div className="flex flex-1 flex-col justify-between mt-5  py-[30px] px-[30px] pt-0">
+                    <div className="flex-1">
+                        <h3 className="text-[#ff7f30] text-[18px] leading-[27px] font-bold IBMPlex">{post.title}</h3>
+                      <p className="text-[14px] leading-[18px]  text-[#535353] DMSans mt-1">
+                        
+                          {post.date}
+                        
+                      </p>
+                      <Link href={post.href} className="mt-2 block">
+                        <p className="mt-3 text-sm NotoSansThai text-black">
+                          {post.description}
+                        </p>
+                      </Link>
+
+                      <Link
+                        href={post.href}
+                        className="flex items-center font-bold text-sm text-[#ff7f30] DMSans mt-3"
+                      >
+                        <span>Read More</span>
+
+                        <span className="font-bold">
+                          <span class="font-bold">
+                          <svg width="10" height="10" className="ml-2" viewBox="-5 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="m3.454.57 10.848 10.424.09.08c.363.35.576.813.608 1.364l-.002.185c-.03.49-.243.954-.664 1.354l.005-.008L3.454 24.431a2.061 2.061 0 0 1-2.845 0 1.964 1.964 0 0 1 0-2.844l9.403-9.03L.609 3.413a1.964 1.964 0 0 1 0-2.844 2.061 2.061 0 0 1 2.845 0Z" fill="#FF7F30"/></svg>
+                          </span>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
