@@ -1,12 +1,13 @@
 import React from "react";
-import MeatsMeLogo from "../img/MeatsMeLogo.png";
+import HomeBakeryLogo from "../img/Logo-Home-Bakery-Logo.png";
 const navigation = {
   Info: [
     { name: "Product", href: "#" },
-    { name: "Contact Us", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "Snack Box", href: "#" },
+    { name: "Our Story", href: "#" },
+    { name: " Contact Us", href: "#" },
   ],
-  Help: [{ name: "Privacy Policy", href: "#" }],
+  Help: [{ name: "FAQ", href: "#" }],
   company: [
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
@@ -86,29 +87,25 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="bg-[#F2E7D6]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
 
-      <section className="bg-[#F4F5FA] pt-[64px] py-[40px]">
+      <section className="bg-[#F2E7D6] pt-[64px] py-[40px] pb-0">
         <div className="max-w-[1270px] mx-auto flex">
           <div className="w-[50%] pr-[20%]">
-            <img src={MeatsMeLogo} className="w-[150px]" alt="" />
-            <p className="IBMPlex mt-5">
-              ทางเราคัดสรรเฉพาะเนื้อคุณภาพได้มาตรฐานจาก
-              “ฟาร์มปลอดสารเร่งโตและสารเร่งเนื้อแดง”
-              รวมไปถึงเนื้อที่เราจัดจำหน่ายทุกชิ้นปราศจากการฉีด ไขมัน
-              เพื่อให้ลูกค้าทุกท่านมั่นใจได้ว่าจะได้รับเนื้อที่มี
-              คุณภาพพร้อมจัดส่งทั่วประเทศ
+            <img src={HomeBakeryLogo} className="w-[250px]" alt="" />
+            <p className="text-[#795E32] font-noto-sans-thai text-28 font-medium leading-[40px]">
+            295 ถนนนครราชสีมา แขวงดุสิต เขตดุสิต กทม. 10300
             </p>
           </div>
           <div className="w-[16%]">
-            <h3 className="DMSans font-bold mt-[50px]">Info</h3>
+          <h3 className="text-[27px] font-extrabold tracking-widest uppercase" style={{ color: '#795E32', fontFamily: 'Avenir' }}>Info</h3>
             <ul role="list" className="mt-3 space-y-1">
               {navigation.Info.map((item) => (
                 <li key={item.name} className="">
-                  <a href={item.href} className="DMSans font-base">
+                  <a href={item.href} className="text-24 font-normal tracking-wider uppercase text-avenir text-brown">
                     {item.name}
                   </a>
                 </li>
@@ -117,11 +114,11 @@ export default function Footer() {
           </div>
           <div className="w-[34%]">
             {" "}
-            <h3 className="DMSans font-bold mt-[50px]">Help</h3>
+            <h3 className="text-[27px] font-extrabold tracking-widest uppercase" style={{ color: '#795E32', fontFamily: 'Avenir' }}>Help</h3>
             <ul role="list" className="mt-3 space-y-1">
               {navigation.Help.map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="DMSans font-base">
+                  <a href={item.href} className="text-24 font-normal tracking-wider uppercase text-avenir text-brown">
                     {item.name}
                   </a>
                 </li>
@@ -129,19 +126,23 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mx-auto max-w-[1270px] pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
+        <div className="mx-auto max-w-[1270px] pt-8 md:flex md:items-center md:justify-end">
+          <div className="flex space-x-4">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-black">
+              <a key={item.name} href={item.href} className="text-[#795E32]">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))}
           </div>
-          <p className="mt-8 text-[14px] leading-6 DMSans  md:order-1 md:mt-0">
-            &copy; 2023 meatsme.app
+          
+        </div>
+        <div className=" bg-[#795E32] mt-[50px]">
+        <p className="mx-auto max-w-[1270px] text-white font-dm-sans text-22 font-normal py-1">
+            &copy; 2021 xxxxx.com
           </p>
         </div>
+
       </section>
     </footer>
   );

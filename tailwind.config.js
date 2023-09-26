@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'noto-sans-thai': ['Noto Sans Thai', 'sans'],
+      },
+    },
   },
   plugins: [],
 }
