@@ -3,10 +3,34 @@
 @tailwind utilities;
 
 
-@font-face {
-    font-family: 'bobby-jones';
-    src: url("../src/fonts/Bobby Rough Soft.ttf");
+  @font-face {
+    font-family: 'Avenir Black';
+    src: url('../src/fonts/Avenir Black.ttf') format('truetype'); /* Specify the path to Avenir Black font */
+    font-weight: 900; /* The font weight for Avenir Black */
+    font-style: normal;
   }
+  
+  @font-face {
+    font-family: 'Avenir Medium';
+    src: url('../src/fonts/Avenir Medium.ttf') format('truetype');
+    font-weight: 500; /* The font weight for Avenir Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Avenir Regular';
+    src: url('../src/fonts/Avenir Regular.ttf') format('truetype');
+    font-weight: 400; /* The font weight for Avenir Regular */
+    font-style: normal;
+  }
+
+
+
+  .coverCenter {
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  
   
 
 
@@ -14,14 +38,7 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.IBMPlex{
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-}
-
-.NotoSansThai{
+/* .NotoSansThai{
     font-family: 'Noto Sans Thai', sans-serif;
-}
+} */
 
-.bobbyJones {
-    font-family: 'bobby-jones';
-}

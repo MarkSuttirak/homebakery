@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import HomeSlider from "../components/HomeSlider";
+import Slider from "../components/Slider";
 import chooseYourMeal1 from "../img/choose-your-meal1.png";
 import unpackYourBox1 from "../img/unpack-your-box-1.png";
 import cookCreateEnjoy1 from "../img/cook-create-enjoy-1.png";
@@ -44,7 +45,7 @@ import blogImg3 from "../img/cmwfood.jpg";
 function Home() {
   return (
     <main>
-      {/* <HomeSlider /> */}
+      <Slider />
 
       <div className="font-noto-sans-thai text-base text-custom-color">
         <p className="leading-7">ทางเราคัดสรรเฉพาะเนื้อคุณภาพได้มาตรฐานจาก “ฟาร์มปลอดสารเร่งโตและสารเร่งเนื้อแดง” รวมไปถึงเนื้อที่เราจัดจำหน่ายทุกชิ้นปราศจากการฉีด ไขมัน เพื่อให้ลูกค้าทุกท่านมั่นใจได้ว่าจะได้รับเนื้อที่มี คุณภาพพร้อมจัดส่งทั่วประเทศ
