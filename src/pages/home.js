@@ -241,7 +241,7 @@ function Home() {
                   <p className="mt-1 text-base leading-[28px] font-noto-sans-thai text-[#795E32]">{post.desc}</p>
                   <button className="text-[#E6A141] font-bold mt-5">Read More</button>
                 </div>
-                <p className="text-sm font-medium text-gray-900">{post.date}</p>
+                <p className="text-sm font-medium text-[#E6A141]">{post.date}</p>
               </div>
             </div>
           ))}
