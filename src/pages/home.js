@@ -253,7 +253,9 @@ function Home() {
       <div className="flex gap-3">
       <div>
             <img className="objec-cover rounded-[20px]" src={homeGallery1} alt="" />
+            <a href="#">
             <img className="objec-cover rounded-[20px] mt-4" src={homeGallery2} alt="" />
+            </a>
       </div>
       <div>
       <img className="objec-cover rounded-[20px]" src={homeGallery3} alt="" />
