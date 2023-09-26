@@ -254,12 +254,12 @@ function Home() {
       <div>
             <img className="objec-cover rounded-[20px]" src={homeGallery1} alt="" />
             <a href="#">
-            <img className="objec-cover rounded-[20px] mt-4" src={homeGallery2} alt="" />
+            <img className="objec-cover rounded-[20px] mt-3" src={homeGallery2} alt="" />
             </a>
       </div>
       <div>
       <img className="objec-cover rounded-[20px]" src={homeGallery3} alt="" />
-            <img className="objec-cover rounded-[20px] mt-4" src={homeGallery4} alt="" />
+            <img className="objec-cover rounded-[20px] mt-3" src={homeGallery4} alt="" />
       </div>
       <div>
       <img className="objec-cover rounded-[20px]" src={homeGallery5} alt="" />
