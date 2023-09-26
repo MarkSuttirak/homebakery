@@ -19,6 +19,13 @@ import product2 from "../img/product2.png";
 import product3 from "../img/product3.png";
 import product4 from "../img/product4.png";
 import snackBox from "../img/snackBox.png";
+import blogimg1 from "../img/blogimg1.png";
+import blogimg2 from "../img/blogimg2.png";
+import homeGallery1 from "../img/homeGallery1.png";
+import homeGallery2 from "../img/homeGallery2.png";
+import homeGallery3 from "../img/homeGallery3.png";
+import homeGallery4 from "../img/homeGallery4.png";
+import homeGallery5 from "../img/homeGallery5.png";
 
 const incentives = [
   {
@@ -77,37 +84,24 @@ const products = [
   // More products...
 ];
 
-// const posts = [
-//   {
-//     title: "CMW Foods Support บุกตลาดเนื้อสัตว์สหรัฐอเมริกา",
-//     date: "February 10, 2023",
-//     href: "#",
-//     category: { name: "February 10, 2023", href: "#" },
-//     description:
-//       "คุณวิทวัส ประจันตะเสน ผู้ก่อตั้งและผู้บริหาร ได้นำแบรนด์สินค้าและผลิตภัณฑ์ที่อยู่ภายใต้การบริหารบุกตลาดเนื้อสัตว์สหรัฐอเมริกา เป็นการก้าวเข้าสู้ตลาดโลก เพื่อตอกย้ำความเป็นผู้",
-//     imageUrl: blogImg1,
-//   },
-//   {
-//     title: "CEO CMW ขนทัพเซเลบริตี้แบรนด์ดัง ออกบูธ งานครบรอบ 21 ปี คมชัดลึก",
-//     date: "February 10, 2023",
-//     href: "/การประชุมเชิงปฏิบัติกา",
-//     category: { name: "BOOTH EXIBITION", href: "#" },
-//     description:
-//       "คุณวิทวัส ประจันตะเสน CEO บริษัท CMW Foods Support Co., Ltd. เจ้าของแบรนด์ Meats Me และ Gyu Gyu",
-//     imageUrl: blogImg2,
-//   },
-//   {
-//     title:
-//       "บริษัท CMW foods Support ร่วมเป็นผู้สนับสนุนหลักงาน CROWN CELEBRATION BRILLIANCE & JEWELRY EXTRAVAGANZA",
-//     date: "February 10, 2023",
-//     href: "/กิจกรรมอื่นๆ/",
-//     category: { name: "OTHER EVENT    ", href: "#" },
-//     description:
-//       "บริษัท CMW foods Support ร่วมเป็นผู้สนับสนุนหลักงาน CROWN CELEBRATION BRILLIANCE & JEWELRY EXTRAVAGANZAมิสแกรนด์สมุทรปราการ 2023 โดยมีคุณ",
-//     imageUrl: blogImg3,
-//   },
-// ];
-
+const Posts = [
+  {
+    id: 1,
+    name: 'ความหวานของขนม',
+    desc: 'บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา',
+    href: '#',
+    date: '18 March',
+    imageSrc: blogimg1,
+  },
+  {
+    id: 2,
+    name: 'ความหวานของขนม',
+    desc: 'บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา',
+    href: '#',
+    date: '18 March',
+    imageSrc: blogimg2,
+  },
+]
 function Home() {
   return (
     <main>
@@ -155,7 +149,7 @@ function Home() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 sm:pt-[190px]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
               BEST SELLER
@@ -193,7 +187,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="grid sm:grid-cols-2 min-h-[600px]">
+      <section className=" grid sm:grid-cols-2 min-h-[600px]">
         <div>
           <img src={snackBox} className="h-full object-cover" alt="" />
         </div>
@@ -213,6 +207,63 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white  mx-auto">
+      <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6 max-w-[960px] lg:px-4">
+
+      <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
+            BAKERY ARTICLES
+            </h2>
+            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
+            เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง เสกสรรค์เซฟตี้เต๊ะราเม็ง
+            </p>
+          </div>
+
+        <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
+          {Posts.map((post) => (
+            <div key={post.id} className="group relative">
+              <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                <img
+                  src={post.imageSrc}
+                  alt={post.imageAlt}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-[30px] font-bold font-noto-sans-thai text-[#795E32] ">
+                    <a href={post.href}>
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {post.name}
+                    </a>
+                  </h3>
+                  <p className="mt-1 text-base leading-[28px] font-noto-sans-thai text-[#795E32]">{post.desc}</p>
+                  <button className="text-[#E6A141] font-bold mt-5">Read More</button>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{post.date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="mb-[60px] mt-[190px]">
+      <div className="flex gap-3">
+      <div>
+            <img className="objec-cover rounded-[20px]" src={homeGallery1} alt="" />
+            <img className="objec-cover rounded-[20px] mt-4" src={homeGallery2} alt="" />
+      </div>
+      <div>
+      <img className="objec-cover rounded-[20px]" src={homeGallery3} alt="" />
+            <img className="objec-cover rounded-[20px] mt-4" src={homeGallery4} alt="" />
+      </div>
+      <div>
+      <img className="objec-cover rounded-[20px]" src={homeGallery5} alt="" />
+      </div>
+      </div>
+    </section>
     </main>
   );
 }
