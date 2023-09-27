@@ -138,7 +138,7 @@ function SnackBox() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 sm:pt-[120px]">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 sm:pt-[120px]">
           <div className="max-w-4xl mx-auto text-center">
             <h4 className="text-[#E6A141] font-normal font-caveat text-[28px]">
               home bakery
