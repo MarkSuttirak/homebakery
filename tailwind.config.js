@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'noto-sans-thai': ['Noto Sans Thai', 'sans'],
         'avenir': ['Avenir', 'sans'],
+        'caveat': ['Caveat', 'cursivevenir'],
       },
       fontWeight: {
         'avenir-light': 300,

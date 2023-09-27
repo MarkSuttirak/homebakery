@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.testimonialContainer .react-slideshow-container .default-nav {
+  background: none;
+}
+
+.testimonialContainer .react-slideshow-container p {
+  background: none;
+}
+
+.testimonialContainer .react-slideshow-container{
+  // position: inherit;
+}
+
+.testimonialContainer .nav.default-nav svg{
+  fill: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
