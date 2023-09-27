@@ -220,11 +220,11 @@ function SnackBox() {
                 
                 <img src={timeline_icon_2} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4 text-right">
               <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   ราคายังไม่รวมภาษี
                 </h3>
-                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai">
                   กรุณามัดจำสินค้า 50% ณ วันสั่งซื้อสินค้า
                 </p>
               </div>
@@ -250,11 +250,11 @@ function SnackBox() {
                 
                 <img src={timeline_icon_4} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4 text-right">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   มีบริการจัดส่ง
                 </h3>
-                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai ">
                   บริการจัดส่งถึงที่ ค่าบริการคิดตามระยะทาง
                 </p>
               </div>
