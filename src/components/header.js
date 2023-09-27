@@ -104,8 +104,10 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mx-auto">
+            <a href="/">
             <img src={HomeBakeryLogo} className="w-[216px]" alt="" />
+            </a>
           </div>
           <div class="inline-flex" role="group">
             <button
