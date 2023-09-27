@@ -151,10 +151,10 @@ export default function Header() {
             </button>
           </div>
           <div class="flex lg:gap-x-20">
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <a href="/" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Home
             </a>
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <a href="/our-story" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Our story
             </a>
             <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
@@ -162,13 +162,13 @@ export default function Header() {
             </a>
         
 
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <a href="/snackbox" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Snack box
             </a>
             <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               bakery article
             </a>
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <a href="/contact-us" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Contact Us
             </a>
           </div>
