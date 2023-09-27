@@ -30,15 +30,44 @@
     background-position: center !important;
     background-size: cover !important;
   }
+
+  .contact-us-form-sec  label {
+    color: #795E32;
+font-family: Avenir;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 166.667% */
+  }
   
+
   
+  .contact-us-form-sec select option {
+    background: white;
+  }
+  
+  .contact-us-form-sec textarea {
+    
+    border: 1px solid #795E32;
+  }
+  
+  .contact-us-form-sec input {
+    
+    border: 1px solid #795E32;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .contact-us-form-sec input:focus {
+    background: white;
+  }
+  
+  .contact-us-form-sec textarea:focus {
+    background: white;
+  }  
 
 
 .DMSans {
     font-family: 'DM Sans', sans-serif;
 }
 
-/* .NotoSansThai{
-    font-family: 'Noto Sans Thai', sans-serif;
-} */
 
