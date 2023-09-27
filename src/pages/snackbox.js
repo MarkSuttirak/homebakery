@@ -8,6 +8,10 @@ import product1 from "../img/product1.png";
 import product2 from "../img/product2.png";
 import product3 from "../img/product3.png";
 import product4 from "../img/product4.png";
+import timeline_icon_1 from "../img/timeline_icon_1.svg";
+import timeline_icon_2 from "../img/timeline_icon_2.svg";
+import timeline_icon_3 from "../img/timeline_icon_3.svg";
+import timeline_icon_4 from "../img/timeline_icon_4.svg";
 
 const snackboxes = [
   {
@@ -192,13 +196,14 @@ function SnackBox() {
             </p>
           </div>
         </div>
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 mt-[60px]">
           <div class="relative wrap overflow-hidden">
-            <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+            <div class="border-2-2 absolute border-opacity-20 border-[#E6A141] h-full border left-1/2"></div>
             <div class="mb-8 flex justify-between items-center w-full right-timeline">
               <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
-                <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+              <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
+                
+                <img src={timeline_icon_1} alt="" />
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
@@ -211,8 +216,9 @@ function SnackBox() {
             </div>
             <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
-                <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+              <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
+                
+                <img src={timeline_icon_2} alt="" />
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
               <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
@@ -225,8 +231,9 @@ function SnackBox() {
             </div>
             <div class="mb-8 flex justify-between items-center w-full right-timeline">
               <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
-                <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+              <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
+                
+                <img src={timeline_icon_3} alt="" />
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
@@ -239,8 +246,9 @@ function SnackBox() {
             </div>
             <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div class="order-1 w-5/12"></div>
-              <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
-                <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
+              <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
+                
+                <img src={timeline_icon_4} alt="" />
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
