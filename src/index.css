@@ -64,6 +64,17 @@ line-height: 30px; /* 166.667% */
   .contact-us-form-sec textarea:focus {
     background: white;
   }  
+  
+
+  .homeSlider .react-slideshow-container button {
+    background: transparent !important;
+  }
+
+  .homeSlider svg {
+    fill: white;
+    height: 60px !important;
+    width: 60px !important;
+}
 
 
 .DMSans {

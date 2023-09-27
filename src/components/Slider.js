@@ -10,6 +10,7 @@ const spanStyle = {
 //   color: '#000000'
 }
 
+
 const divStyle = {
   display: 'flex',
   alignItems: 'center',

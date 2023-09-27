@@ -105,7 +105,10 @@ const Posts = [
 function Home() {
   return (
     <main>
+      <section className="homeSlider">
       <Slider />
+      </section>
+    
 
       <section className="bg-white">
         <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
