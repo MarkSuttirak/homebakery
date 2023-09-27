@@ -215,10 +215,10 @@ function SnackBox() {
                 <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">
+              <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   ราคายังไม่รวมภาษี
                 </h3>
-                <p class="text-gray-700 leading-tight">
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
                   กรุณามัดจำสินค้า 50% ณ วันสั่งซื้อสินค้า
                 </p>
               </div>
@@ -229,10 +229,10 @@ function SnackBox() {
                 <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">
+                <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   การเปลี่ยนแปลง ยกเลิก
                 </h3>
-                <p class="text-gray-700 leading-tight">
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
                   กรุณาแจ้งล่วงหน้าอย่างน้อย 1 วัน ก่อนเวลา 09.00 น.
                 </p>
               </div>
@@ -243,10 +243,10 @@ function SnackBox() {
                 <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
               </div>
               <div class="order-1  w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">
+                <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   มีบริการจัดส่ง
                 </h3>
-                <p class="text-gray-700 leading-tight">
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
                   บริการจัดส่งถึงที่ ค่าบริการคิดตามระยะทาง
                 </p>
               </div>
