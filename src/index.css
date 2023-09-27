@@ -47,8 +47,9 @@ line-height: 30px; /* 166.667% */
   }
   
   .contact-us-form-sec textarea {
-    
+    background: #F5F5F5;
     border: 1px solid #795E32;
+    border-radius: 5px;
   }
   
   .contact-us-form-sec input {

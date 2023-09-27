@@ -177,6 +177,21 @@ function SnackBox() {
       </section>
 
       <section>
+        <div className="mx-auto max-w-2xl  px-4  sm:px-6 lg:max-w-7xl lg:px-8 sm:pt-[120px]">
+          <div className="max-w-4xl mx-auto text-center">
+            <h4 className="text-[#E6A141] font-normal font-caveat text-[28px]">
+              our product
+            </h4>
+            <h2 className="text-[#795E32] font-noto-sans-thai text-[38px] font-bold leading-[68px] tracking-[1.44px]">
+              ขั้นตอนการสั่งซื้อขนมทานเล่น ( Snack Box )
+            </h2>
+            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
+              เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
+              เสกสรรค์เซฟตี้เต๊ะราเม็ง ครัวซองต์ร็อคมอบตัว
+              บึมเพียวปูอัดแครกเกอร์เจล ความหมายละอ่อน
+            </p>
+          </div>
+        </div>
         <div class="container mx-auto px-4 py-8">
           <div class="relative wrap overflow-hidden">
             <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
@@ -185,13 +200,12 @@ function SnackBox() {
               <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
                 <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
               </div>
-              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">
-                  Event Title
+              <div class="order-1  w-5/12 px-6 py-4">
+                <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
+                  สั่งสินค้าล่วงหน้า
                 </h3>
-                <p class="text-gray-700 leading-tight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.
+                <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai max-w-[268px]">
+                  กรุณาสั่งสินค้าล่วงหน้า 2 วัน ก่อนเวลา 17.00 น.
                 </p>
               </div>
             </div>
@@ -200,13 +214,12 @@ function SnackBox() {
               <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
                 <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
               </div>
-              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-3 font-bold text-gray-800 text-xl">
-                  Event Title
+                  ราคายังไม่รวมภาษี
                 </h3>
                 <p class="text-gray-700 leading-tight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.
+                  กรุณามัดจำสินค้า 50% ณ วันสั่งซื้อสินค้า
                 </p>
               </div>
             </div>
@@ -215,13 +228,12 @@ function SnackBox() {
               <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
                 <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
               </div>
-              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-3 font-bold text-gray-800 text-xl">
-                  Event Title
+                  การเปลี่ยนแปลง ยกเลิก
                 </h3>
                 <p class="text-gray-700 leading-tight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.
+                  กรุณาแจ้งล่วงหน้าอย่างน้อย 1 วัน ก่อนเวลา 09.00 น.
                 </p>
               </div>
             </div>
@@ -230,13 +242,12 @@ function SnackBox() {
               <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
                 <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
               </div>
-              <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4">
                 <h3 class="mb-3 font-bold text-gray-800 text-xl">
-                  Event Title
+                  มีบริการจัดส่ง
                 </h3>
                 <p class="text-gray-700 leading-tight">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.
+                  บริการจัดส่งถึงที่ ค่าบริการคิดตามระยะทาง
                 </p>
               </div>
             </div>
@@ -244,79 +255,99 @@ function SnackBox() {
         </div>
       </section>
 
-      <section className="max-w-[850px] mx-auto contact-us-form-sec">
-        <h2 className="text-[#795E32] text-4xl font-noto-sans-thai font-bold uppercase">ติดต่อสั่งซื้อชุดเบรค ( Snack Box )</h2>
-        <form action='#' method="POST">
-            <div className="flex flex-col gap-y-5">
-              <div className="">
-                <label htmlFor="first-name" className="block w-full font-bold text-md">
+      <section className="max-w-[850px] mx-auto contact-us-form-sec py-[190px]">
+        <h2 className="text-[#795E32] text-4xl font-noto-sans-thai font-bold uppercase">
+          ติดต่อสั่งซื้อชุดเบรค ( Snack Box )
+        </h2>
+        <form action="#" method="POST" className="mt-[50px]">
+          <div className="flex flex-col gap-y-5">
+            <div className="">
+              <label
+                htmlFor="first-name"
+                className="block w-full font-bold text-md"
+              >
                 First & Last Name (required)
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="first-name"
-                    className="form-input w-full w-full"
-                  />
-                </div>
-              </div>
-              <div className="">
-                <label htmlFor="email" className="block w-[200px] font-bold text-md">
-                  Email *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    className="form-input w-full"
-                  />
-                </div>
-              </div>
-              <div className="">
-                <label htmlFor="phone" className="block w-[200px] font-bold text-md">
-                  Phone *
-                </label>
-                <div className="mt-1 w-full">
-                  <input
-                    required
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    autoComplete="phone"
-                    className="form-input w-full"
-                  />
-                </div>
-              </div>
-
-              <div className="">
-                <label htmlFor="message" className="block w-[200px] font-bold text-md">
-                  Message
-                </label>
-                <div className="mt-1 w-full">
-                  <textarea
-                    name="message"
-                    cols={8}
-                    id="message"
-                    className="form-textarea w-full"
-                  />
-                </div>
-              </div>
-              <div className="">
-                <label htmlFor="enduser" className="block w-[200px] font-bold text-md">
-                  
-                </label>
-                <div className="mt-1 w-full">
-                <button type="submit" class=" bg-[#D73A32] py-3 px-16 text-[18px] leading-[27px] font-bold text-white">Send</button>
-                </div>
+              </label>
+              <div className="mt-1 w-full">
+                <input
+                  required
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="first-name"
+                  className="form-input w-full"
+                />
               </div>
             </div>
-          </form>
+            <div className="">
+              <label
+                htmlFor="email"
+                className="block w-[200px] font-bold text-md"
+              >
+                Email *
+              </label>
+              <div className="mt-1 w-full">
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  id="email"
+                  autoComplete="email"
+                  className="form-input w-full"
+                />
+              </div>
+            </div>
+            <div className="">
+              <label
+                htmlFor="phone"
+                className="block w-[200px] font-bold text-md"
+              >
+                Phone *
+              </label>
+              <div className="mt-1 w-full">
+                <input
+                  required
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  autoComplete="phone"
+                  className="form-input w-full"
+                />
+              </div>
+            </div>
+
+            <div className="">
+              <label
+                htmlFor="message"
+                className="block w-[200px] font-bold text-md"
+              >
+                Message
+              </label>
+              <div className="mt-1 w-full">
+                <textarea
+                  name="message"
+                  rows={8}
+                  id="message"
+                  className="form-textarea w-full"
+                />
+              </div>
+            </div>
+            <div className="">
+              <label
+                htmlFor="enduser"
+                className="block w-[200px] font-bold text-md"
+              ></label>
+              <div className="mt-1 w-full text-right">
+                <button
+                  type="submit"
+                  class=" bg-[#D73A32] rounded-full py-6 px-10 text-[18px] leading-[14px] font-noto-sans-thai text-white"
+                >
+                  ติดต่อและสั่งซื้อ
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
   );
