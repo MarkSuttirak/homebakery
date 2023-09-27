@@ -160,9 +160,7 @@ export default function Header() {
             <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Product
             </a>
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              Product
-            </a>
+        
 
             <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Snack box
