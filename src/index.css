@@ -73,3 +73,53 @@
 .DMSans {
   font-family: "DM Sans", sans-serif;
 }
+
+
+.timeline1 , .timeline2 , .timeline3 , .timeline4 {
+  position: relative;
+}
+
+.timeline_main::before {
+  content: "";
+  position: absolute;
+  width: 120px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+  background-size: cover;
+  transform: translateY(-50%);
+}
+
+.timeline_main::after {
+  content: "";
+  position: absolute;
+  width: 120px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+  background-size: cover;
+  transform: translateY(-50%);
+}
+
+.timeline1:before {
+  background-image: url('../src/img/timelineImg1.png'); /* Use the placeholder image URL */
+  left: -30px; /* Adjust the position as needed */
+  top: 50%; /* Adjust the position as needed */
+}
+
+.timeline2:after {
+  background-image: url('../src/img/timelineImg2.png'); /* Use the placeholder image URL */
+  right: -30px; /* Adjust the position as needed */
+  top: 50%; /* Adjust the position as needed */
+}
+
+.timeline3:before {
+  background-image: url('../src/img/timelineImg3.png'); /* Use the placeholder image URL */
+  left: -30px; /* Adjust the position as needed */
+  top: 50%; /* Adjust the position as needed */
+}
+
+.timeline4:after {
+  background-image: url('../src/img/timelineImg4.png'); /* Use the placeholder image URL */
+  right: -30px; /* Adjust the position as needed */
+  top: 50%; /* Adjust the position as needed */
+}
+
+
+

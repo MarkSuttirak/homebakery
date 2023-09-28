@@ -202,10 +202,9 @@ function SnackBox() {
             <div class="mb-8 flex justify-between items-center w-full right-timeline">
               <div class="order-1 w-5/12"></div>
               <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
-                
                 <img src={timeline_icon_1} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4 timeline_main timeline1 pl-28">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   สั่งสินค้าล่วงหน้า
                 </h3>
@@ -217,11 +216,10 @@ function SnackBox() {
             <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div class="order-1 w-5/12"></div>
               <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
-                
                 <img src={timeline_icon_2} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4 text-right">
-              <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
+              <div class="order-1  w-5/12 px-6 py-4 text-right timeline_main timeline2 pr-28">
+                <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   ราคายังไม่รวมภาษี
                 </h3>
                 <p class="text-[#795E32] text-[20px] leading-[28px] font-noto-sans-thai">
@@ -232,10 +230,9 @@ function SnackBox() {
             <div class="mb-8 flex justify-between items-center w-full right-timeline">
               <div class="order-1 w-5/12"></div>
               <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
-                
                 <img src={timeline_icon_3} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4">
+              <div class="order-1  w-5/12 px-6 py-4 timeline_main timeline3 pl-28">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   การเปลี่ยนแปลง ยกเลิก
                 </h3>
@@ -247,10 +244,9 @@ function SnackBox() {
             <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div class="order-1 w-5/12"></div>
               <div class="z-20 flex items-center order-1 bg-[#E6A141] justify-center w-12 h-12 rounded-full">
-                
                 <img src={timeline_icon_4} alt="" />
               </div>
-              <div class="order-1  w-5/12 px-6 py-4 text-right">
+              <div class="order-1  w-5/12 px-6 py-4 text-right timeline_main timeline4 pr-28">
                 <h3 class="mb-1 font-semibold font-noto-sans-thai text-[#795E32] text-[30px]">
                   มีบริการจัดส่ง
                 </h3>
