@@ -110,7 +110,7 @@ function Home() {
       </section>
     
 
-      <section className="bg-white">
+      <section className="bg-white mt-[190px]">
         <div className="mx-auto max-w-7xl sm:px-2  lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl mx-auto text-center">
@@ -128,7 +128,7 @@ function Home() {
                 <div key={incentive.name} className="sm:flex lg:block">
                   <div className="sm:flex-shrink-0">
                     <img
-                      className="h-auto w-[210px] mx-auto"
+                      className="h-auto w-[160px] mx-auto"
                       src={incentive.imageSrc}
                       alt=""
                     />
@@ -147,12 +147,12 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mt-[190px]">
         <img src={homeImg} alt="" />
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 sm:pt-[190px]">
+      <section className="bg-white sm:pt-[190px]">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 ">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
               BEST SELLER
@@ -190,7 +190,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className=" grid sm:grid-cols-2 min-h-[600px]">
+      <section className=" grid sm:grid-cols-2 min-h-[600px] mt-[190px]">
         <div>
           <img src={snackBox} className="h-full object-cover" alt="" />
         </div>
@@ -211,8 +211,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-white  mx-auto">
-      <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6 max-w-[960px] lg:px-4">
+      <section className="bg-white  mx-auto mt-[190px]">
+      <div className="mx-auto px-4 sm:px-6 max-w-[960px] lg:px-4">
 
       <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
