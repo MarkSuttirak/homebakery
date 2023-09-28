@@ -42,7 +42,7 @@ function OurStory() {
         {/* <div className="background-overlay"></div> */}
         <div className="container mx-auto max-w-[700px] px-6 flex flex-col justify-center text-center min-h-[600px]">
           <h1 className="text-white text-shadow-lg font-Avenir text-[81px] font-bold leading-[68px] tracking-[2.43px] uppercase relative">
-            Our story
+            Our story Test
           </h1>
 
           <p className="text-white text-shadow-sm font-noto-sans-thai text-2xl font-normal leading-[28px] mt-5">
