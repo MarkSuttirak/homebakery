@@ -34,7 +34,7 @@ const incentives = [
 
 function OurStory() {
   return (
-    <main>
+    <main className="sm:p-4">
       <section
         className="min-h-[50vh] relative flex items-center coverCenter"
         style={{ background: `url('${ourStoryBgImg}')` }}
