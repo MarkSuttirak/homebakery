@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import MeatsMeLogo from "../img/MeatsMeLogo.png";
+import { Link, useLocation } from 'react-router-dom';
+
 import { Popover, Transition } from "@headlessui/react";
 import {
   ArrowPathIcon,
@@ -15,6 +16,8 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import phone from "../img/phone.svg";
 import mail from "../img/mail.svg";
 import HomeBakeryLogo from "../img/Logo-Home-Bakery-Logo.png";
+
+
 
 const solutions = [
   {
@@ -88,6 +91,8 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const location = useLocation();
+
   return (
     <>
       <Popover className="relative bg-white">
@@ -153,26 +158,25 @@ export default function Header() {
             </button>
           </div>
           <div class="flex lg:gap-x-20">
-            <a href="/" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <Link to="/" class={`nav-link ${location.pathname === '/' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
               Home
+            </Link>
+            <Link to="/our-story" class={`nav-link ${location.pathname === '/our-story' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            Our story
+            </Link>
+            <Link to="#" class={`nav-link ${location.pathname === '#' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            Product
+            </Link>
+            <Link to="/snackbox" class={`nav-link ${location.pathname === '/snackbox' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            Snack box
+            </Link>
+            <a to="/bakery-article" class={`nav-link ${location.pathname === '/bakery-article' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            bakery article
             </a>
-            <a href="/our-story" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              Our story
-            </a>
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              Product
-            </a>
-        
-
-            <a href="/snackbox" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              Snack box
-            </a>
-            <a href="/bakery-article" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              bakery article
-            </a>
-            <a href="/contact-us" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
-              Contact Us
-            </a>
+            <Link to="/contact-us" class={`nav-link ${location.pathname === '/contact-us' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            Contact Us
+            </Link>
+      
           </div>
         </nav>
       </Popover>
