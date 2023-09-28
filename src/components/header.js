@@ -1,5 +1,5 @@
-import { Fragment } from "react";
-import { Link, useLocation } from 'react-router-dom';
+import { Fragment, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { Popover, Transition } from "@headlessui/react";
 import {
@@ -16,8 +16,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import phone from "../img/phone.svg";
 import mail from "../img/mail.svg";
 import HomeBakeryLogo from "../img/Logo-Home-Bakery-Logo.png";
-
-
 
 const solutions = [
   {
@@ -93,10 +91,12 @@ function classNames(...classes) {
 export default function Header() {
   const location = useLocation();
 
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <>
       <Popover className="relative bg-white">
-        <div className="mx-auto max-w-[1290px] flex items-center justify-between py-6 md:space-x-10">
+        <div className="mx-auto max-w-[1290px]  items-center justify-between py-6 md:space-x-10 lg:flex hidden">
           <div>
             <ul class="max-w-md space-y-1 text-[#795E32] hover:text-[#E6A141] font-Avenir text-[19px] font-aviner-medium tracking-[0.3%]">
               <li class="flex items-center">
@@ -109,9 +109,9 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <div className="mx-auto">
+          <div className="mx-auto ">
             <a href="/">
-            <img src={HomeBakeryLogo} className="w-[216px]" alt="" />
+              <img src={HomeBakeryLogo} className="w-[216px]" alt="" />
             </a>
           </div>
           <div class="inline-flex" role="group">
@@ -131,8 +131,39 @@ export default function Header() {
           </div>
         </div>
 
+        <div className="lg:hidden block mt-5">
+          <div className="flex justify-between pl-2 pr-5">
+            <img className="w-[100px]" src={HomeBakeryLogo} alt="" />
+            <button className="" onClick={() => setOpenMenu(!openMenu)}>
+              Menu
+            </button>
+          </div>
+          {openMenu && (
+            <div className="bg-white flex flex-col mt-5">
+              <Link to="/" className="border-b py-4 px-4 ">
+                home
+              </Link>
+              <Link to="/our-story" className="border-b py-4 px-4 ">
+                our story
+              </Link>
+              <Link to="/" className="border-b py-4 px-4 ">
+                product
+              </Link>
+              <Link to="/snackbox" className="border-b py-4 px-4 ">
+                snack box
+              </Link>
+              <Link to="/bakery-article" className="border-b py-4 px-4 ">
+                bakery article
+              </Link>
+              <Link to="/contact-us" className="border-b py-4 px-4 ">
+                contact us
+              </Link>
+            </div>
+          )}
+        </div>
+
         <nav
-          class="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8 border-t border-solid border-[#C4B7A3]"
+          class="mx-auto hidden sm:flex max-w-7xl items-center justify-center p-6 lg:px-8 border-t border-solid border-[#C4B7A3]"
           aria-label="Global"
         >
           <div class="flex lg:hidden">
@@ -158,25 +189,54 @@ export default function Header() {
             </button>
           </div>
           <div class="flex lg:gap-x-20">
-            <Link to="/" class={`${location.pathname === '/' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link
+              to="/"
+              class={`${
+                location.pathname === "/" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
               Home
             </Link>
-            <Link to="/our-story" class={`${location.pathname === '/our-story' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
-            Our story
+            <Link
+              to="/our-story"
+              class={`${
+                location.pathname === "/our-story" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
+              Our story
             </Link>
-            <Link to="#" class={`${location.pathname === '#' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
-            Product
+            <Link
+              to="#"
+              class={`${
+                location.pathname === "#" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
+              Product
             </Link>
-            <Link to="/snackbox" class={`${location.pathname === '/snackbox' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
-            Snack box
+            <Link
+              to="/snackbox"
+              class={`${
+                location.pathname === "/snackbox" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
+              Snack box
             </Link>
-            <a to="/bakery-article" class={`${location.pathname === '/bakery-article' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
-            bakery article
-            </a>
-            <Link to="/contact-us" class={`${location.pathname === '/contact-us' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
-            Contact Us
+            <Link
+              to="/bakery-article"
+              class={`${
+                location.pathname === "/bakery-article" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
+              bakery article
             </Link>
-      
+            <Link
+              to="/contact-us"
+              class={`${
+                location.pathname === "/contact-us" ? "text-[#E6A141]" : ""
+              } text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}
+            >
+              Contact Us
+            </Link>
           </div>
         </nav>
       </Popover>

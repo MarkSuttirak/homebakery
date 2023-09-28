@@ -8,6 +8,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import "./App.scss"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SingleBlog from './pages/SingleBlog';
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/snackbox" element={<SnackBox />} />
         <Route path="/bakery-article" element={<BakeryArticle />} />
+        <Route path="/single-blog" element={<SingleBlog />} />
       </Routes>
       <Footer />
     </BrowserRouter>

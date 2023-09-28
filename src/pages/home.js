@@ -87,28 +87,27 @@ const products = [
 const Posts = [
   {
     id: 1,
-    name: 'ความหวานของขนม',
-    desc: 'บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา',
-    href: '#',
-    date: '18 March',
+    name: "ความหวานของขนม",
+    desc: "บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา",
+    href: "#",
+    date: "18 March",
     imageSrc: blogimg1,
   },
   {
     id: 2,
-    name: 'ความหวานของขนม',
-    desc: 'บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา',
-    href: '#',
-    date: '18 March',
+    name: "ความหวานของขนม",
+    desc: "บัสเปปเปอร์มินต์เอนทรานซ์ แฟลช เยอบีราเจ๊าะแจ๊ะชะโนดแหม็บ ไลน์แมนชั่นพาสตาสต็อก ฮัลโลวีนไฮเอนด์โบว์ลิ่งปิกอัพแมชชีน แรงใจ อัลตรา สี่แยกก๊วน ไอเดียเซาท์แบต บึมเทรนด์มอยส์เจอไรเซอร์ดีกรีบรา",
+    href: "#",
+    date: "18 March",
     imageSrc: blogimg2,
   },
-]
+];
 function Home() {
   return (
     <main>
       <section className="homeSlider">
-      <Slider />
+        <Slider />
       </section>
-    
 
       <section className="bg-white mt-[190px]">
         <div className="mx-auto max-w-7xl sm:px-2  lg:px-4">
@@ -212,63 +211,89 @@ function Home() {
       </section>
 
       <section className="bg-white  mx-auto mt-[190px]">
-      <div className="mx-auto px-4 sm:px-6 max-w-[960px] lg:px-4">
-
-      <div className="max-w-4xl mx-auto text-center">
+        <div className="mx-auto px-4 sm:px-6 max-w-[960px] lg:px-4">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
-            BAKERY ARTICLES
+              BAKERY ARTICLES
             </h2>
             <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
-            เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง เสกสรรค์เซฟตี้เต๊ะราเม็ง
+              เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
+              เสกสรรค์เซฟตี้เต๊ะราเม็ง
             </p>
           </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
-          {Posts.map((post) => (
-            <div key={post.id} className="group relative">
-              <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-                <img
-                  src={post.imageSrc}
-                  alt={post.imageAlt}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-[30px] font-bold font-noto-sans-thai text-[#795E32] ">
-                    <a href={post.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {post.name}
-                    </a>
-                  </h3>
-                  <p className="mt-1 text-base leading-[28px] font-noto-sans-thai text-[#795E32]">{post.desc}</p>
-                  <button className="text-[#E6A141] font-bold mt-5">Read More</button>
+          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
+            {Posts.map((post) => (
+              <div key={post.id} className="group relative">
+                <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                  <img
+                    src={post.imageSrc}
+                    alt={post.imageAlt}
+                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
                 </div>
-                <p className="text-sm font-medium text-[#E6A141]">{post.date}</p>
+                <div className="mt-4 flex justify-between">
+                  <div>
+                    <h3 className="text-[30px] font-bold font-noto-sans-thai text-[#795E32] ">
+                      <a href={post.href}>
+                        <span aria-hidden="true" className="absolute inset-0" />
+                        {post.name}
+                      </a>
+                    </h3>
+                    <p className="mt-1 text-base leading-[28px] font-noto-sans-thai text-[#795E32]">
+                      {post.desc}
+                    </p>
+                    <button className="text-[#E6A141] font-bold mt-5">
+                      Read More
+                    </button>
+                  </div>
+                  <p className="text-sm font-medium text-[#E6A141]">
+                    {post.date}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section className="mb-[60px] mt-[190px]">
-      <div className="flex gap-3">
-      <div>
-            <img className="objec-cover rounded-[20px]" src={homeGallery1} alt="" />
+      <section className="mb-[60px] mt-[190px]">
+        <div className="flex gap-3">
+          <div>
+            <img
+              className="objec-cover rounded-[20px]"
+              src={homeGallery1}
+              alt=""
+            />
             <a href="#">
-            <img className="objec-cover rounded-[20px] mt-3" src={homeGallery2} alt="" />
+              <img
+                className="objec-cover rounded-[20px] mt-3"
+                src={homeGallery2}
+                alt=""
+              />
             </a>
-      </div>
-      <div>
-      <img className="objec-cover rounded-[20px]" src={homeGallery3} alt="" />
-            <img className="objec-cover rounded-[20px] mt-3" src={homeGallery4} alt="" />
-      </div>
-      <div>
-      <img className="objec-cover rounded-[20px]" src={homeGallery5} alt="" />
-      </div>
-      </div>
-    </section>
+          </div>
+          <div>
+            <img
+              className="objec-cover rounded-[20px]"
+              src={homeGallery3}
+              alt=""
+            />
+            <img
+              className="objec-cover rounded-[20px] mt-3"
+              src={homeGallery4}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="objec-cover rounded-[20px]"
+              src={homeGallery5}
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

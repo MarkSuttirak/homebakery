@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import bakeryArticleBgImg from "../img/bakeryArticleBgImg.png";
 import featuredBlogImg from "../img/featuredBlogImg.png";
+import AllBlogs from "../components/AllBlogs";
+
 
 function BakeryArticle() {
   const activeTabClass = "bg-[#F2E7D6] text-[#795E32]";
@@ -9,6 +11,7 @@ function BakeryArticle() {
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
   };
+
 
   return (
     <main>
@@ -29,15 +32,15 @@ function BakeryArticle() {
         </div>
       </section>
       <section className="mt-[120px]">
-        <div className="max-w-[1300px] mx-auto flex">
+        <div className="max-w-[1300px] mx-auto md:flex md:px-0 px-4">
           <div>
             <img src={featuredBlogImg} alt="" />
           </div>
-          <div className="pl-[130px]">
-            <h2 className="text-[#795E32] text-[40px] font-bold font-Avenir">
+          <div className="md:pl-[130px] md:mt-0 mt-7">
+            <h2 className="text-[#795E32] md:leading-[58px] leading-[46px] text-[40px] font-bold font-Avenir">
               The Secret of Toffee Cake
             </h2>
-            <p>
+            <p className="md:mt-0 mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros. Consectetur adipiscing elit.
             </p>
@@ -47,9 +50,9 @@ function BakeryArticle() {
           </div>
         </div>
       </section>
-      <section className="mt-[130px]">
+      <section className="mt-[130px] md:px-0 px-4">
         <div className="max-w-[1300px] mx-auto">
-          <div className="flex gap-x-6">
+          <div className="grid md:flex grid-cols-2 gap-y-6 gap-x-6">
             <button
               onClick={() => handleTabClick(1)}
               className={`px-4 py-2 text-[#795E32] ${
@@ -85,10 +88,10 @@ function BakeryArticle() {
           </div>
 
           <div className="mt-4">
-            {activeTab === 1 && <div>Tab 1 content goes here</div>}
-            {activeTab === 2 && <div>Tab 2 content goes here</div>}
-            {activeTab === 3 && <div>Tab 3 content goes here</div>}
-            {activeTab === 4 && <div>Tab 4 content goes here</div>}
+            {activeTab === 1 && <AllBlogs/>}
+            {activeTab === 2 && <AllBlogs/>}
+            {activeTab === 3 && <AllBlogs/>}
+            {activeTab === 4 && <AllBlogs/>}
           </div>
         </div>
       </section>
