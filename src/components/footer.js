@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBakeryLogo from "../img/Logo-Home-Bakery-Logo.png";
+import HomeBakeryLogo from "../img/Home_Bakery__Footer_Loo.png";
 const navigation = {
   Info: [
     { name: "Product", href: "#" },
@@ -95,13 +95,13 @@ export default function Footer() {
       <section className="bg-[#F2E7D6] pt-[64px] py-[40px] pb-0">
         <div className="max-w-[1270px] mx-auto sm:flex sm:text-left text-center">
           <div className="sm:w-[50%] sm:pr-[20%]">
-            <img src={HomeBakeryLogo} className="w-[250px] mx-auto" alt="" />
-            <p className="text-[#795E32] font-noto-sans-thai text-28 font-medium leading-[40px] sm:px-0 px-4">
+            <img src={HomeBakeryLogo} className="w-[190px] mx-auto sm:ml-0" alt="" />
+            <p className="text-[#795E32] max-w-[280px] mx-auto sm:ml-0 font-noto-sans-thai text-[20px] font-medium leading-[28px] sm:px-0 px-4 mt-3">
             295 ถนนนครราชสีมา แขวงดุสิต เขตดุสิต กทม. 10300
             </p>
           </div>
           <div className="sm:w-[16%] sm:mt-0 mt-5">
-          <h3 className="text-[27px] font-extrabold tracking-widest uppercase" style={{ color: '#795E32', fontFamily: 'Avenir' }}>Info</h3>
+          <h3 className="text-[27px] font-bold tracking-[0.81px] text-[#795E32] font-Avenir uppercase">Info</h3>
             <ul role="list" className="mt-3 space-y-1">
               {navigation.Info.map((item) => (
                 <li key={item.name} className="">
@@ -114,7 +114,7 @@ export default function Footer() {
           </div>
           <div className="sm:w-[34%] sm:mt-0 mt-6">
             {" "}
-            <h3 className="text-[27px] font-extrabold tracking-widest uppercase" style={{ color: '#795E32', fontFamily: 'Avenir' }}>Help</h3>
+            <h3 className="text-[27px] font-bold tracking-[0.81px] text-[#795E32] font-Avenir uppercase">Help</h3>
             <ul role="list" className="mt-3 space-y-1">
               {navigation.Help.map((item) => (
                 <li key={item.name}>
