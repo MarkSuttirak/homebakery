@@ -158,22 +158,22 @@ export default function Header() {
             </button>
           </div>
           <div class="flex lg:gap-x-20">
-            <Link to="/" class={`nav-link ${location.pathname === '/' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link to="/" class={`${location.pathname === '/' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
               Home
             </Link>
-            <Link to="/our-story" class={`nav-link ${location.pathname === '/our-story' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link to="/our-story" class={`${location.pathname === '/our-story' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
             Our story
             </Link>
-            <Link to="#" class={`nav-link ${location.pathname === '#' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link to="#" class={`${location.pathname === '#' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
             Product
             </Link>
-            <Link to="/snackbox" class={`nav-link ${location.pathname === '/snackbox' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link to="/snackbox" class={`${location.pathname === '/snackbox' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
             Snack box
             </Link>
-            <a to="/bakery-article" class={`nav-link ${location.pathname === '/bakery-article' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <a to="/bakery-article" class={`${location.pathname === '/bakery-article' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
             bakery article
             </a>
-            <Link to="/contact-us" class={`nav-link ${location.pathname === '/contact-us' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
+            <Link to="/contact-us" class={`${location.pathname === '/contact-us' ? 'text-[#E6A141]' : ''} text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase `}>
             Contact Us
             </Link>
       
