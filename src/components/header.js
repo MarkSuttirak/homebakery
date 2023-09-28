@@ -167,7 +167,7 @@ export default function Header() {
             <a href="/snackbox" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               Snack box
             </a>
-            <a href="#" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
+            <a href="/bakery-article" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
               bakery article
             </a>
             <a href="/contact-us" class="text-[#795E32] hover:text-[#E6A141] text-center font-Avenir text-[24px] font-500 lowercase">
