@@ -109,11 +109,11 @@ function Home() {
         <Slider />
       </section>
 
-      <section className="bg-white mt-[190px]">
+      <section className="bg-white mt-[70px] md:mt-[190px]">
         <div className="mx-auto max-w-7xl sm:px-2  lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
+              <h2 className="text-[#795E32] font-Avenir text-[36px] md:text-[48px] font-bold leading-[68px] tracking-[1.44px]">
                 ABOUT US
               </h2>
               <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
@@ -133,10 +133,10 @@ function Home() {
                     />
                   </div>
                   <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0 text-center">
-                    <h3 className="text-[#614B28] font-Avenir text-[33px] font-bold">
+                    <h3 className="text-[#614B28] font-Avenir text-[28px] md:text-[33px] font-bold">
                       {incentive.name}
                     </h3>
-                    <p className="mt-2 text-[#614B28] font-noto-sans-thai text-[18px] leading-[28px] font-normal">
+                    <p className="mt-2 text-[#614B28] font-noto-sans-thai text-[14px] sm:text-[18px] leading-[28px] font-normal">
                       {incentive.description}
                     </p>
                   </div>
@@ -146,24 +146,24 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-[190px]">
-        <img src={homeImg} alt="" />
+      <section className="mt-[80px] md:mt-[190px]">
+        <img src={homeImg} className="md:h-auto h-[200px]" alt="" />
       </section>
 
-      <section className="bg-white sm:pt-[190px]">
+      <section className="bg-white pt-[40px] md:pt-[190px]">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 ">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
+            <h2 className="text-[#795E32] font-Avenir text-[36px] md:text-[48px] font-bold leading-[68px] tracking-[1.44px]">
               BEST SELLER
             </h2>
-            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
+            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-[18px] sm:text-2xl font-normal leading-[28px]">
               เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
               เสกสรรค์เซฟตี้เต๊ะราเม็ง ครัวซองต์ร็อคมอบตัว
               บึมเพียวปูอัดแครกเกอร์เจล ความหมายละอ่อน
             </p>
           </div>
 
-          <div className="mt-[60px] grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
+          <div className="mt-[60px] grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:grid-cols-4  md:grid-cols-2 md:gap-y-5 lg:gap-x-8">
             {products.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="h-56 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-72 xl:h-80">
@@ -189,34 +189,34 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className=" grid sm:grid-cols-2 min-h-[600px] mt-[190px]">
+      <section className=" grid sm:grid-cols-2 min-h-[600px] mt-[70px] md:mt-[190px]">
         <div>
           <img src={snackBox} className="h-full object-cover" alt="" />
         </div>
-        <div className="bg-[#293485]  xl:pl-[110px] md:pl-[80px] pl-[30px]">
+        <div className="bg-[#293485]  xl:pl-[110px] lg:pl-[80px] pl-[30px] md:py-0 py-[30px]">
           <div className="flex flex-col justify-center h-full">
-            <span className="text-white font-Avenir text-[48px] font-bold leading-[68%] tracking-[1.44px] uppercase">
+            <span className="text-white font-Avenir text-[36px] md:text-[48px] font-bold leading-[68px] tracking-[1.44px] uppercase">
               SNACK BOX
             </span>
-            <p className="max-w-[500px] mt-5 text-white font-noto-sans-thai text-2xl font-normal leading-[28px]">
+            <p className="max-w-[500px] mt-7 md:mt-5 text-white font-noto-sans-thai text-2xl font-normal leading-[32px] md:leading-[28px]">
               ซิงลีกสุนทรีย์แพนดา รีเสิร์ชอุปการคุณผู้นำแคชเชียร์
               โรแมนติคเซลส์ราเม็งสเกตช์เดโม อริยสงฆ์แครอทล เทคโนแครตเอ๋อมลภาวะ
               แจ็กพ็อต
             </p>
-            <button className="w-[208px] h-[56px] mt-[20px] bg-[#E41E25] rounded-full text-2xl leading-[28px] text-white font-noto-sans-thai">
+            <button className="w-[208px] h-[56px] mt-6 md:mt-[20px] bg-[#E41E25] rounded-full text-2xl leading-[28px] text-white font-noto-sans-thai">
               VIEW MORE
             </button>
           </div>
         </div>
       </section>
 
-      <section className="bg-white  mx-auto mt-[190px]">
+      <section className="bg-white  mx-auto mt-[70px] md:mt-[190px]">
         <div className="mx-auto px-4 sm:px-6 max-w-[960px] lg:px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
+            <h2 className="text-[#795E32] font-Avenir text-[36px] md:text-[48px] font-bold leading-[68px] tracking-[1.44px]">
               BAKERY ARTICLES
             </h2>
-            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
+            <p className="mt-4 text-[#795E32] font-noto-sans-thai text-[18px] sm:text-2xl font-normal leading-[28px]">
               เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
               เสกสรรค์เซฟตี้เต๊ะราเม็ง
             </p>
@@ -257,8 +257,9 @@ function Home() {
         </div>
       </section>
 
-      <section className="mb-[60px] mt-[190px]">
-        <div className="flex gap-3">
+      <section className="mb-[60px] mt-[70px] md:mt-[190px]">
+        <div className="sm:flex gap-3 sm:px-0 px-4">
+          <div className="flex gap-3">
           <div>
             <img
               className="objec-cover rounded-[20px]"
@@ -285,7 +286,8 @@ function Home() {
               alt=""
             />
           </div>
-          <div>
+          </div>
+          <div className="sm:mt-0 mt-4">
             <img
               className="objec-cover rounded-[20px]"
               src={homeGallery5}

@@ -43,7 +43,7 @@ const Slider = () => {
          {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div className='flex flex-col coverCenter' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                <span className='text-white text-center text-shadow-4px font-Avenir text-[81px] font-bold leading-[68%] tracking-[2.43%] uppercase' style={spanStyle}>{slideImage.caption}</span>
+                <span className='text-white text-center text-shadow-4px font-Avenir text-[81px] font-bold leading-[68px] tracking-[2.43%] uppercase' style={spanStyle}>{slideImage.caption}</span>
                 <p className="max-w-[632px] mt-5 text-white text-center text-shadow font-noto-sans-thai text-2xl font-normal leading-[28px]">{slideImage.desc}</p>
                 <button className='w-[208px] h-[56px] mt-[40px] bg-[#E41E25] rounded-full text-2xl leading-[28px] text-white font-noto-sans-thai'>เกี่ยวกับเรา</button>
               </div>

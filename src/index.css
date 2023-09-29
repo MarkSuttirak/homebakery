@@ -88,6 +88,27 @@
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 800px) {
+  .timeline_main::before {
+    content: "";
+    position: absolute;
+    width: 70px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    background-size: cover;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .timeline_main::after {
+    content: "";
+    position: absolute;
+    width: 70px !important; /* Adjust the width as needed */
+    height: 70px !important; /* Adjust the height as needed */
+    background-size: cover;
+    transform: translateY(-50%);
+    display: none;
+  }
+}
+
 .timeline_main::after {
   content: "";
   position: absolute;

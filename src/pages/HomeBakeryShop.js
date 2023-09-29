@@ -195,7 +195,7 @@ function HomeBakeryShop() {
             </Dialog>
           </Transition.Root>
 
-          <main className="mx-auto max-w-7xl px-4  ">
+          <main className="mx-auto max-w-7xl sm:px-4  ">
             <section aria-labelledby="products-heading" className="pt-6 pb-24">
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 lg:gap-y-10 lg:grid-cols-4">
                 {/* Filters */}
@@ -227,7 +227,7 @@ function HomeBakeryShop() {
                     </div>
                   </div>
 
-                  <div className="border-b border-[#E1E8ED] pb-10 pt-10 hidden lg:block">
+                  <div className=" pb-10 pt-10 hidden lg:block">
                     <label
                       htmlFor="Search"
                       className="block text-base font-medium text-[#795e328c]"
@@ -326,7 +326,7 @@ function HomeBakeryShop() {
                         as="div"
                         className="relative inline-block text-left"
                       >
-                        <div className=" bg-[#795E32] rounded-full sm:px-[10px]  lg:px-5 py-1">
+                        <div className=" bg-[#795E32] rounded-full sm:px-[10px]  lg:px-5 px-4 py-1 mt-1">
                           <Menu.Button className="group inline-flex justify-center text-base font-medium text-white font-noto-sans-thai  uppercase">
                           เรียงลำดับ
                             <ChevronDownIcon
