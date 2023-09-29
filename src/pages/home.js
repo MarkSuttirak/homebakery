@@ -105,7 +105,7 @@ const Posts = [
 function Home() {
   return (
     <main>
-      <section className="homeSlider">
+      <section className="homeSlider z-0">
         <Slider />
       </section>
 
