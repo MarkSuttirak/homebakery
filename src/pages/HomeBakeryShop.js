@@ -200,7 +200,7 @@ function HomeBakeryShop() {
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 lg:gap-y-10 lg:grid-cols-4">
                 {/* Filters */}
                 <div>
-                  <div className=" pb-10 hidden lg:block">
+                  <div className=" pb-10 hidden lg:block pt-20">
                     <h3 className="text-2xl text-[#795E32] font-normal leading-[27px]">
                       Filter by price
                     </h3>
