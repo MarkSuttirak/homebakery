@@ -39,9 +39,8 @@ function OurStory() {
         className="min-h-[50vh] relative flex items-center coverCenter"
         style={{ background: `url('${ourStoryBgImg}')` }}
       >
-        {/* <div className="background-overlay"></div> */}
-        <div className="container mx-auto max-w-[700px] px-6 flex flex-col justify-center text-center min-h-[600px]">
-          <h1 className="text-white text-shadow-lg font-Avenir text-[81px] font-bold leading-[68px] tracking-[2.43px] uppercase relative">
+        <div className="container mx-auto max-w-[700px] px-6 flex flex-col justify-center text-center min-h-[400px] md:min-h-[600px]">
+          <h1 className="text-white text-shadow-lg font-Avenir text-[54px] md:text-[81px] font-bold leading-[68px] tracking-[2.43px] uppercase relative">
             Our story
           </h1>
 
@@ -51,14 +50,14 @@ function OurStory() {
           </p>
         </div>
       </section>
-      <section className="bg-white mt-[120px]">
+      <section className="bg-white mt-[70px] md:mt-[120px]">
         <div className="mx-auto max-w-7xl sm:px-2 lg:px-4">
           <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-[#795E32] font-Avenir text-[48px] font-bold leading-[68px] tracking-[1.44px]">
+              <h2 className="text-[#795E32] font-Avenir text-[36px] md:text-[48px] font-bold leading-[68px] tracking-[1.44px]">
                 ABOUT US
               </h2>
-              <p className="mt-4 text-[#795E32] font-noto-sans-thai text-2xl font-normal leading-[28px]">
+              <p className="mt-4 text-[#795E32] font-noto-sans-thai text-[20px] sm:text-2xl font-normal leading-[28px]">
                 เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
                 เสกสรรค์เซฟตี้เต๊ะราเม็ง ครัวซองต์ร็อคมอบตัว
                 บึมเพียวปูอัดแครกเกอร์เจล ความหมายละอ่อน
@@ -66,7 +65,7 @@ function OurStory() {
             </div>
             <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3 place-items-center">
               {incentives.map((incentive) => (
-                <div key={incentive.name} className="sm:flex lg:block">
+                <div key={incentive.name} className="block">
                   <div className="sm:flex-shrink-0">
                     <img
                       className="h-auto w-[210px] mx-auto"
@@ -88,13 +87,13 @@ function OurStory() {
           </div>
         </div>
       </section>
-      <section className="bg-white mt-[180px]">
+      <section className="bg-white mt-[90px] lg:mt-[180px]">
         <div className="mx-auto max-w-7xl sm:px-2 lg:px-4 md:flex justify-center items-center">
           <div className="sm:w-1/2">
             <img src={AboutHomebaker} alt="" />
           </div>
-          <div className="sm:w-1/2 sm:pl-[50px]">
-            <h3 className="text-[48px] text-[#795E32] font-bold leading-[68px]">
+          <div className="sm:w-1/2 md:pl-[50px] md:px-0 px-[15px] md:mt-0 mt-5">
+            <h3 className="text-[36px] md:text-[48px] text-[#795E32] font-bold leading-[52px] sm:leading-[68px]">
               About <br /> Homebakery
             </h3>
             <p className="mt-6 text-[#795E32] font-noto-sans-thai text-xl font-normal">
@@ -113,42 +112,42 @@ function OurStory() {
           </div>
         </div>
       </section>
-      <section className="bg-white mt-[180px]">
+      <section className="bg-white mt-[80px] md:mt-[180px]">
         <div className="mx-auto max-w-7xl sm:px-2 lg:px-4 text-center">
           <h4 className="text-[#E6A141] font-normal text-[34px] font-caveat">
             home bakery
           </h4>
-          <h3 className="text-[48px] text-[#795E32] font-bold leading-[68px]">
+          <h3 className="text-[36px] md:text-[48px] text-[#795E32] font-bold leading-[52px] sm:leading-[68px]">
             WHERE TO FIND?
           </h3>
-          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal">
+          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal sm:px-0 px-4">
             เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
             เสกสรรค์เซฟตี้เต๊ะราเม็ง <br /> ครัวซองต์ร็อคมอบตัว
             บึมเพียวปูอัดแครกเกอร์เจล ความหมายละอ่อน
           </p>
-          <div className="sm:flex justify-center mt-[70px]">
-            <img src={ImageSecond} className="sm:mr-[100px]" alt="" />
+          <div className="flex justify-center mt-[70px]">
+            <img src={ImageSecond} className="mr-[50px] sm:mr-[100px]" alt="" />
             <img src={ImageFirst} alt="" />
           </div>
         </div>
       </section>
-      <section className="bg-white mt-[180px]">
+      <section className="bg-white mt-[100px] md:mt-[180px]">
         <div className="mx-auto max-w-7xl sm:px-2 lg:px-4 text-center">
           <h4 className="text-[#E6A141] font-normal text-[28px] font-caveat">
             home bakery
           </h4>
-          <h3 className="text-[48px] text-[#795E32]  font-bold leading-[68px]">
+          <h3 className="text-[36px] md:text-[48px] text-[#795E32]  font-bold leading-[68px]">
             OUR AWARDS
           </h3>
-          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal">
+          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal sm:px-0 px-4">
             เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
             เสกสรรค์เซฟตี้เต๊ะราเม็ง <br />
             ตัวตนราเม็ง เสกสรรค์เซฟตี้เต๊ะราเม็ง
           </p>
-          <div className="sm:flex justify-center mt-[70px]">
+          <div className="sm:flex justify-center mt-[70px] sm:px-0 px-4">
             <div className="sm:w-1/2 rounded-lg">
               <img src={AwardFirst} alt="" />
-              <div className="bg-[#293485] px-[48px] py-[23px] rounded-b-xl text-left">
+              <div className="bg-[#293485] px-5 sm:px-[48px] py-[23px] rounded-b-xl text-left">
                 <h4 className="text-white text-[30px] leading-[68px] font-noto-sans-thai font-bold">
                   ร้านเบเกอรี่ต้นแบบ
                 </h4>
@@ -161,21 +160,21 @@ function OurStory() {
                 </button>
               </div>
             </div>
-            <div className="sm:w-1/2 rounded-lg ml-[20px]">
+            <div className="sm:w-1/2 rounded-lg sm:pt-0 pt-5 sm:ml-[20px]">
               <img src={Awardsecond} className="rounded-xl" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-white mt-[110px]">
+      <section className="bg-white mt-[70px] md:mt-[110px]">
         <div className="mx-auto max-w-7xl sm:px-2 lg:px-4 text-center">
           <h4 className="text-[#E6A141] font-normal text-[28px]">
             home bakery
           </h4>
-          <h3 className="text-[48px] text-[#795E32] font-bold leading-[68px]">
+          <h3 className="text-[36px] md:text-[48px] text-[#795E32] font-bold leading-[48px] sm:leading-[68px]">
             Voice to Customers
           </h3>
-          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal">
+          <p className="mt-3 text-[#614B28] text-[20px] font-noto-sans-thai font-normal sm:px-0 px-4">
             เยลลี่ซีเรียส สุนทรีย์ซีเนียร์เรซินโปรเจกต์คัตเอาต์ ตัวตนราเม็ง
             เสกสรรค์เซฟตี้เต๊ะราเม็ง
             <br />
@@ -184,8 +183,8 @@ function OurStory() {
         </div>
       </section>
       <section className="bg-[#293485] mt-[110px]">
-        <div className="mx-auto max-w-7xl px-[50px]">
-            <Testomonials />
+        <div className="mx-auto max-w-7xl px-[15px] md:px-[50px]">
+          <Testomonials />
         </div>
       </section>
     </main>

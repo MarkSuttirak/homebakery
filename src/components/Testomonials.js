@@ -31,12 +31,12 @@ const slideImages = [
 
 const Testomonials = () => {
     return (
-      <div className="slide-container testimonialContainer py-[150px]">
+      <div className="slide-container testimonialContainer py-[55px] md:py-[150px]">
         <Slide>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div className='flex flex-col coverCenter'>
-                <p className=" mt-5 text-white text-center font-noto-sans-thai text-[24px] font-normal leading-[40px] mx-[50px]">{slideImage.desc}</p>
+                <p className="mt-5 text-white text-center font-noto-sans-thai text-[13px] md:text-[24px] font-normal leading-[20px] md:leading-[40px] mx-[50px]">{slideImage.desc}</p>
               </div>
             </div>
           ))} 

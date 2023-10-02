@@ -20,23 +20,23 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </section>
-      <section className="max-w-[1300px] mx-auto flex justify-around my-[140px]">
+      <section className="max-w-[1300px] mx-auto md:flex justify-around my-[70px] lg:my-[140px] md:px-0 px-4">
         <div>
-          <p className="text-[#795E32] text-[48px] leading-[68px] font-avenir-bold tracking-[1.44px]">
+          <p className="text-[#795E32] text-[36px] md:text-[48px] leading-[68px] font-avenir-bold tracking-[1.44px]">
             CONTACT US
           </p>
-          <p className="text-[#E6A141] text-lg font-Avenir mt-[100px]">
+          <p className="text-[#E6A141] text-lg font-Avenir mt-[20px] md:mt-[100px]">
             Send Message
           </p>
-          <div className="flex gap-x-7 mt-2">
-            <img src={line} className="h-[50px] w-auto" alt="" />
-            <img src={Facebook} className="h-[50px] w-auto" alt="" />
-            <img src={fb_messenger} className="h-[50px] w-auto" alt="" />
-            <img src={youtube} className="h-[50px] w-auto" alt="" />
+          <div className="flex gap-x-7 mt-3 items-center">
+            <img src={line} className="h-[30px] md:h-[50px] w-auto" alt="" />
+            <img src={Facebook} className="h-[30px] md:h-[50px] w-auto" alt="" />
+            <img src={fb_messenger} className="h-[30px] md:h-[50px] w-auto" alt="" />
+            <img src={youtube} className="h-[24px] md:h-[50px] w-auto" alt="" />
           </div>
         </div>
 
-        <div className="rightMain flex flex-col gap-y-7">
+        <div className="rightMain flex flex-col gap-y-7 md:mt-0 mt-3">
           <div className="max-w-[250px]">
             <p className="text-[#E6A141] text-lg font-avenir-bold">
               Home Bakery{" "}
